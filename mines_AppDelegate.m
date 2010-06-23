@@ -3,7 +3,7 @@
 //  mines
 //
 //  Created by Chris Miller on 6/20/10.
-//  Copyright __MyCompanyName__ 2010 . All rights reserved.
+//  Copyright FSDEV 2010 . All rights reserved.
 //
 
 #import "mines_AppDelegate.h"
@@ -16,31 +16,18 @@
 
 - (void)applicationWillFinishLaunching:(NSNotification *)aNotification {
 	NSLog(@"mines will finish launching");
-	if([self minefield] == nil)
-		NSLog(@"things can make sense now");
-	 NSInteger rows=0;
-	 NSInteger cols=0;
-	[[self minefield] getNumberOfRows:&rows columns:&cols];
-	NSLog(@"minefield has %d rows, %d cols",rows, cols);
-	NSImage * img = [[NSImage alloc] initWithContentsOfFile:@"/Users/cmiller/Desktop/mines/flag.png"];
-	if(img == nil)
-		NSLog(@"loading that image was fail");
-	NSImageCell * c = [[self minefield] cellAtRow:1 column:1];
-	if(c == nil)
-		c = [[NSImageCell alloc] init];
-	[c setObjectValue:img];
-	[[self minefield] putCell:c atRow:0 column:0];
-	NSLog(@"App Stoof: %@",[[NSBundle mainBundle] bundlePath]);
+	injectAppDelegate(self);
+	for(size_t x = 0; x < 8; ++x)
+		for(size_t y = 0; y < 8; ++y)
+			putImageAtTile(BLANK_TILE, x, y);
+	putImageAtTile(QUESTION_MARK, 4, 4);
+	putImageAtTile(FLAG_TILE, 3, 3);
+	putImageAtTile(BOMB_TILE, 3, 4);
+	putImageAtTile(NUM_7, 4, 3);
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	NSLog(@"mines did finish launching");
-	if([self minefield] == nil)
-		NSLog(@"things can make sense now");
-	
-	NSImageCell * c = [[self minefield] cellAtRow:1 column:1];
-	if(c == nil)
-		NSLog(@"accessing that cell was fail");
 }
 
 /**

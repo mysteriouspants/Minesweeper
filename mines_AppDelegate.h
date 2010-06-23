@@ -3,10 +3,12 @@
 //  mines
 //
 //  Created by Chris Miller on 6/20/10.
-//  Copyright __MyCompanyName__ 2010 . All rights reserved.
+//  Copyright FSDEV 2010 . All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
+
+#import "Resources.h"
 
 @interface mines_AppDelegate : NSObject 
 {

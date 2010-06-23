@@ -24,7 +24,7 @@
 		DA0F49FE11D1E09000EBA200 /* number 8.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0F49F411D1E09000EBA200 /* number 8.png */; };
 		DA0F49FF11D1E09000EBA200 /* question mark.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0F49F511D1E09000EBA200 /* question mark.png */; };
 		DA0F4A0811D1E3CE00EBA200 /* Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0F4A0711D1E3CE00EBA200 /* Resources.m */; };
-		DA0F4A0A11D1E40E00EBA200 /* Images.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA0F4A0911D1E40E00EBA200 /* Images.plist */; };
+		DA0F4A0A11D1E40E00EBA200 /* Resources.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA0F4A0911D1E40E00EBA200 /* Resources.plist */; };
 		DA0F4A1211D1E7C800EBA200 /* blank tile.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0F4A1111D1E7C800EBA200 /* blank tile.png */; };
 		DA673AC011CE147E0072B5FE /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = DA673ABF11CE147E0072B5FE /* flag.png */; };
 /* End PBXBuildFile section */
@@ -55,7 +55,7 @@
 		DA0F49F511D1E09000EBA200 /* question mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "question mark.png"; sourceTree = "<group>"; };
 		DA0F4A0611D1E3CE00EBA200 /* Resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resources.h; sourceTree = "<group>"; };
 		DA0F4A0711D1E3CE00EBA200 /* Resources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resources.m; sourceTree = "<group>"; };
-		DA0F4A0911D1E40E00EBA200 /* Images.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Images.plist; sourceTree = "<group>"; };
+		DA0F4A0911D1E40E00EBA200 /* Resources.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Resources.plist; sourceTree = "<group>"; };
 		DA0F4A1111D1E7C800EBA200 /* blank tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank tile.png"; sourceTree = "<group>"; };
 		DA673ABF11CE147E0072B5FE /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,7 +149,7 @@
 				8D1107310486CEB800E47090 /* mines-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				2F7446970DB6B7EA00F9684A /* MainMenu.xib */,
-				DA0F4A0911D1E40E00EBA200 /* Images.plist */,
+				DA0F4A0911D1E40E00EBA200 /* Resources.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -227,7 +227,7 @@
 				DA0F49FD11D1E09000EBA200 /* number 7.png in Resources */,
 				DA0F49FE11D1E09000EBA200 /* number 8.png in Resources */,
 				DA0F49FF11D1E09000EBA200 /* question mark.png in Resources */,
-				DA0F4A0A11D1E40E00EBA200 /* Images.plist in Resources */,
+				DA0F4A0A11D1E40E00EBA200 /* Resources.plist in Resources */,
 				DA0F4A1211D1E7C800EBA200 /* blank tile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

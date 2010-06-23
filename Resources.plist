@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Image Sets</key>
+	<dict>
+		<key>programmer_art</key>
+		<dict>
+			<key>bomb</key>
+			<string>bomb.png</string>
+			<key>number 1</key>
+			<string>number 1.png</string>
+			<key>number 2</key>
+			<string>number 2.png</string>
+			<key>number 3</key>
+			<string>number 3.png</string>
+			<key>number 4</key>
+			<string>number 4.png</string>
+			<key>number 5</key>
+			<string>number 5.png</string>
+			<key>number 6</key>
+			<string>number 6.png</string>
+			<key>number 7</key>
+			<string>number 7.png</string>
+			<key>number 8</key>
+			<string>number 8.png</string>
+			<key>question mark</key>
+			<string>question mark.png</string>
+			<key>flag</key>
+			<string>flag.png</string>
+			<key>blank tile</key>
+			<string>blank tile.png</string>
+		</dict>
+	</dict>
+	<key>Image Enum Mappings</key>
+	<dict>
+		<key>0</key>
+		<string>blank tile</string>
+		<key>1</key>
+		<string>bomb</string>
+		<key>2</key>
+		<string>question mark</string>
+		<key>3</key>
+		<string>flag</string>
+		<key>4</key>
+		<string>number 1</string>
+		<key>5</key>
+		<string>number 2</string>
+		<key>6</key>
+		<string>number 3</string>
+		<key>7</key>
+		<string>number 4</string>
+		<key>8</key>
+		<string>number 5</string>
+		<key>9</key>
+		<string>number 6</string>
+		<key>10</key>
+		<string>number 7</string>
+		<key>11</key>
+		<string>number 8</string>
+	</dict>
+</dict>
+</plist>
