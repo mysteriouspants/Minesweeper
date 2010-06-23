@@ -1,2 +1,4 @@
 winmine.gif
 build
+*.mode[123]v3
+*.pbxuser

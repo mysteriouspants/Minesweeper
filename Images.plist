@@ -26,6 +26,8 @@
 		<string>Content/Resources/question mark.png</string>
 		<key>flag</key>
 		<string>Content/Resources/flag.png</string>
+		<key>blank tile</key>
+		<string>Content/Resources/blank tile.png</string>
 	</dict>
 </dict>
 </plist>
