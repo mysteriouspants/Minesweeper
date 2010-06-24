@@ -27,6 +27,7 @@
 		DA0F4A0A11D1E40E00EBA200 /* Resources.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA0F4A0911D1E40E00EBA200 /* Resources.plist */; };
 		DA0F4A1211D1E7C800EBA200 /* blank tile.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0F4A1111D1E7C800EBA200 /* blank tile.png */; };
 		DA0F4AD511D2BF7E00EBA200 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = DA0F4AD411D2BF7E00EBA200 /* AppIcon.icns */; };
+		DA0F4ADE11D2C26C00EBA200 /* Mines Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0F4ADD11D2C26C00EBA200 /* Mines Engine.m */; };
 		DA673AC011CE147E0072B5FE /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = DA673ABF11CE147E0072B5FE /* flag.png */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,8 @@
 		DA0F4A0911D1E40E00EBA200 /* Resources.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Resources.plist; sourceTree = "<group>"; };
 		DA0F4A1111D1E7C800EBA200 /* blank tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank tile.png"; sourceTree = "<group>"; };
 		DA0F4AD411D2BF7E00EBA200 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		DA0F4ADC11D2C26C00EBA200 /* Mines Engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Mines Engine.h"; sourceTree = "<group>"; };
+		DA0F4ADD11D2C26C00EBA200 /* Mines Engine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Mines Engine.m"; sourceTree = "<group>"; };
 		DA673ABF11CE147E0072B5FE /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +84,8 @@
 				77C8280C06725ACE000B614F /* mines_AppDelegate.m */,
 				DA0F4A0611D1E3CE00EBA200 /* Resources.h */,
 				DA0F4A0711D1E3CE00EBA200 /* Resources.m */,
+				DA0F4ADC11D2C26C00EBA200 /* Mines Engine.h */,
+				DA0F4ADD11D2C26C00EBA200 /* Mines Engine.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -200,6 +205,9 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = FSDEV;
+			};
 			buildConfigurationList = 26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "mines" */;
 			compatibilityVersion = "Xcode 3.1";
 			hasScannedForEncodings = 1;
@@ -247,6 +255,7 @@
 				77C8280E06725ACE000B614F /* mines_AppDelegate.m in Sources */,
 				770B37ED0679A11B001EADE2 /* mines_DataModel.xcdatamodel in Sources */,
 				DA0F4A0811D1E3CE00EBA200 /* Resources.m in Sources */,
+				DA0F4ADE11D2C26C00EBA200 /* Mines Engine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

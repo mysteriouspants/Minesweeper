@@ -8,7 +8,6 @@
  */
 
 @class mines_AppDelegate;
-// /Users/cmiller/Desktop/mines/build/Debug/mines.app/Content/Resources is where all the goodies are
 
 typedef enum {
 	BLANK_TILE=0,

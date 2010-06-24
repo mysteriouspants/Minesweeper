@@ -14,8 +14,12 @@
 @synthesize minefield;
 @synthesize timer;
 
+@synthesize engine;
+
 - (void)applicationWillFinishLaunching:(NSNotification *)aNotification {
 	NSLog(@"mines will finish launching");
+	//	[[self minefield] setTarget:self];
+	//	[[self minefield] setAction:@selector(performClick:)];
 	injectAppDelegate(self);
 	for(size_t x = 0; x < 8; ++x)
 		for(size_t y = 0; y < 8; ++y)
@@ -28,6 +32,10 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	NSLog(@"mines did finish launching");
+}
+
+- (IBAction)performClick:(id)sender {
+	NSLog(@"Received click at (%d,%d)",[sender selectedRow],[sender selectedColumn]);
 }
 
 /**

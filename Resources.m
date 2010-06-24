@@ -22,6 +22,7 @@ __weak mines_AppDelegate * __appDg;
 
 void injectAppDelegate(mines_AppDelegate * dg) {
 	__appDg = dg;
+	 // sendActionOn:NSLeftMouseDownMask|NSRightMouseDownMask
 }
 
 BOOL __resources_init() {
@@ -63,7 +64,7 @@ bool putImageAtTile(const IMAGE image_id, const NSInteger x, const NSInteger y) 
 		c = [[NSImageCell alloc] init];
 		[[__appDg minefield] putCell:c atRow:x column:y];
 	}
-	[c setObjectValue:getImage(image_id)];
+	[c setImage:getImage(image_id)];
 	return TRUE;
 }
 
