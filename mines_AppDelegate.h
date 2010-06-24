@@ -15,6 +15,7 @@
     NSWindow *window;
     IBOutlet id minefield;
     IBOutlet id timer;
+	IBOutlet NSTextField * textField;
 	
 	Mines_Engine * engine;
     
@@ -26,6 +27,7 @@
 @property (nonatomic, retain) IBOutlet NSWindow *window;
 @property (nonatomic, retain) IBOutlet id minefield;
 @property (nonatomic, retain) IBOutlet id timer;
+@property (nonatomic, retain) NSTextField * textField;
 
 @property (nonatomic, retain) Mines_Engine * engine;
 

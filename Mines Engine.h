@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
+#include <stdlib.h>
+
 @class mines_AppDelegate;
 
 @interface Mines_Engine : NSObject {

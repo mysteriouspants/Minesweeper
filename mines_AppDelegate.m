@@ -7,27 +7,25 @@
 //
 
 #import "mines_AppDelegate.h"
+#import "Mines Engine.h"
 
 @implementation mines_AppDelegate
 
 @synthesize window;
 @synthesize minefield;
 @synthesize timer;
+@synthesize textField;
 
 @synthesize engine;
 
 - (void)applicationWillFinishLaunching:(NSNotification *)aNotification {
 	NSLog(@"mines will finish launching");
-	//	[[self minefield] setTarget:self];
-	//	[[self minefield] setAction:@selector(performClick:)];
+	[self.textField setStringValue:@"Click on a Tile to Start!"];
+	self.engine = [[Mines_Engine alloc] initWithApp:self];
 	injectAppDelegate(self);
 	for(size_t x = 0; x < 8; ++x)
 		for(size_t y = 0; y < 8; ++y)
 			putImageAtTile(BLANK_TILE, x, y);
-	putImageAtTile(QUESTION_MARK, 4, 4);
-	putImageAtTile(FLAG_TILE, 3, 3);
-	putImageAtTile(BOMB_TILE, 3, 4);
-	putImageAtTile(NUM_7, 4, 3);
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
@@ -36,6 +34,8 @@
 
 - (IBAction)performClick:(id)sender {
 	NSLog(@"Received click at (%d,%d)",[sender selectedRow],[sender selectedColumn]);
+	[engine receiveClickAtRow:[sender selectedRow]
+						  col:[sender selectedColumn]];
 }
 
 /**

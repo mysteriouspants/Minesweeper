@@ -141,19 +141,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DA0F4BB611D2DAD300EBA200 /* programmer art */,
 				DA0F4AD411D2BF7E00EBA200 /* AppIcon.icns */,
-				DA0F4A1111D1E7C800EBA200 /* blank tile.png */,
-				DA0F49EC11D1E09000EBA200 /* bomb.png */,
-				DA0F49ED11D1E09000EBA200 /* number 1.png */,
-				DA0F49EE11D1E09000EBA200 /* number 2.png */,
-				DA0F49EF11D1E09000EBA200 /* number 3.png */,
-				DA0F49F011D1E09000EBA200 /* number 4.png */,
-				DA0F49F111D1E09000EBA200 /* number 5.png */,
-				DA0F49F211D1E09000EBA200 /* number 6.png */,
-				DA0F49F311D1E09000EBA200 /* number 7.png */,
-				DA0F49F411D1E09000EBA200 /* number 8.png */,
-				DA0F49F511D1E09000EBA200 /* question mark.png */,
-				DA673ABF11CE147E0072B5FE /* flag.png */,
 				8D1107310486CEB800E47090 /* mines-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				2F7446970DB6B7EA00F9684A /* MainMenu.xib */,
@@ -177,6 +166,25 @@
 				770B37EC0679A11B001EADE2 /* mines_DataModel.xcdatamodel */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		DA0F4BB611D2DAD300EBA200 /* programmer art */ = {
+			isa = PBXGroup;
+			children = (
+				DA0F4A1111D1E7C800EBA200 /* blank tile.png */,
+				DA0F49EC11D1E09000EBA200 /* bomb.png */,
+				DA0F49ED11D1E09000EBA200 /* number 1.png */,
+				DA0F49EE11D1E09000EBA200 /* number 2.png */,
+				DA0F49EF11D1E09000EBA200 /* number 3.png */,
+				DA0F49F011D1E09000EBA200 /* number 4.png */,
+				DA0F49F111D1E09000EBA200 /* number 5.png */,
+				DA0F49F211D1E09000EBA200 /* number 6.png */,
+				DA0F49F311D1E09000EBA200 /* number 7.png */,
+				DA0F49F411D1E09000EBA200 /* number 8.png */,
+				DA0F49F511D1E09000EBA200 /* question mark.png */,
+				DA673ABF11CE147E0072B5FE /* flag.png */,
+			);
+			name = "programmer art";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
