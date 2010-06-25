@@ -51,326 +51,327 @@
 							<int key="NSvFlags">264</int>
 							<string key="NSFrame">{{20, 20}, {320, 320}}</string>
 							<reference key="NSSuperview" ref="823886803"/>
+							<int key="NSViewLayerContentsRedrawPolicy">2</int>
 							<bool key="NSEnabled">YES</bool>
 							<int key="NSNumRows">8</int>
 							<int key="NSNumCols">8</int>
 							<array class="NSMutableArray" key="NSCells">
-								<object class="IBCustomCell" id="252980217">
+								<object class="IBCustomCell" id="939639540">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="689781337">
+								<object class="IBCustomCell" id="673071674">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="848722103">
+								<object class="IBCustomCell" id="798124207">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="280581881">
+								<object class="IBCustomCell" id="1021824258">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="154001456">
+								<object class="IBCustomCell" id="744597000">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="1000617574">
+								<object class="IBCustomCell" id="675752700">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="911670885">
+								<object class="IBCustomCell" id="106128551">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="520479726">
+								<object class="IBCustomCell" id="1017122441">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="431492297">
+								<object class="IBCustomCell" id="746666887">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="196041048">
+								<object class="IBCustomCell" id="388847851">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="528649055">
+								<object class="IBCustomCell" id="523195170">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="900441006">
+								<object class="IBCustomCell" id="192311778">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="7517394">
+								<object class="IBCustomCell" id="401600586">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="489611395">
+								<object class="IBCustomCell" id="542489087">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="673017146">
+								<object class="IBCustomCell" id="728973838">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="827518237">
+								<object class="IBCustomCell" id="821467118">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="270293076">
+								<object class="IBCustomCell" id="548908891">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="377194157">
+								<object class="IBCustomCell" id="324238465">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="1000780030">
+								<object class="IBCustomCell" id="524869022">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="25850499">
+								<object class="IBCustomCell" id="117953848">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="384710551">
+								<object class="IBCustomCell" id="725838051">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="768934195">
+								<object class="IBCustomCell" id="443276568">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="1067051488">
+								<object class="IBCustomCell" id="40586002">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="644662195">
+								<object class="IBCustomCell" id="311845509">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="999627125">
+								<object class="IBCustomCell" id="258624485">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="279323799">
+								<object class="IBCustomCell" id="974531304">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="728094942">
+								<object class="IBCustomCell" id="882772430">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="892439175">
+								<object class="IBCustomCell" id="795293484">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="39063669">
+								<object class="IBCustomCell" id="534868657">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="695970402">
+								<object class="IBCustomCell" id="968142593">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="521956720">
+								<object class="IBCustomCell" id="563780172">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="1068183532">
+								<object class="IBCustomCell" id="79910431">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="723768566">
+								<object class="IBCustomCell" id="177848078">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="394035342">
+								<object class="IBCustomCell" id="385355986">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="267564279">
+								<object class="IBCustomCell" id="389090887">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="151896471">
+								<object class="IBCustomCell" id="951372316">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="762215809">
+								<object class="IBCustomCell" id="345270900">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="249552549">
+								<object class="IBCustomCell" id="619657401">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="789520000">
+								<object class="IBCustomCell" id="952868062">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="889595510">
+								<object class="IBCustomCell" id="910537665">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="620063604">
+								<object class="IBCustomCell" id="197632984">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="264763344">
+								<object class="IBCustomCell" id="655299010">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="180016424">
+								<object class="IBCustomCell" id="891703614">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="715630837">
+								<object class="IBCustomCell" id="791024522">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="965182386">
+								<object class="IBCustomCell" id="336938100">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="854578481">
+								<object class="IBCustomCell" id="856043653">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="875985827">
+								<object class="IBCustomCell" id="786102384">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="801800356">
+								<object class="IBCustomCell" id="197599616">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="880851830">
+								<object class="IBCustomCell" id="1020837296">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="761554862">
+								<object class="IBCustomCell" id="344890471">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="184640380">
+								<object class="IBCustomCell" id="1040579719">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="250187650">
+								<object class="IBCustomCell" id="468216548">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="702683010">
+								<object class="IBCustomCell" id="978413162">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="943518458">
+								<object class="IBCustomCell" id="623721239">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="223703049">
+								<object class="IBCustomCell" id="501704553">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="816497873">
+								<object class="IBCustomCell" id="820045398">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="897680062">
+								<object class="IBCustomCell" id="1032425559">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="62078273">
+								<object class="IBCustomCell" id="89071547">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="157139160">
+								<object class="IBCustomCell" id="959495932">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="822058164">
+								<object class="IBCustomCell" id="740135967">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="857163461">
+								<object class="IBCustomCell" id="892179996">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="207455633">
+								<object class="IBCustomCell" id="623835133">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="837554188">
+								<object class="IBCustomCell" id="364752036">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
 								</object>
-								<object class="IBCustomCell" id="170504470">
+								<object class="IBCustomCell" id="121228694">
 									<int key="NSCellFlags">130560</int>
 									<int key="NSCellFlags2">0</int>
 									<reference key="NSControlView" ref="454517146"/>
@@ -380,12 +381,12 @@
 							<string key="NSIntercellSpacing">{0, 0}</string>
 							<int key="NSMatrixFlags">78127104</int>
 							<string key="NSCellClass">NSActionCell</string>
-							<object class="IBCustomCell" key="NSProtoCell" id="325199288">
+							<object class="IBCustomCell" key="NSProtoCell" id="759061538">
 								<int key="NSCellFlags">130560</int>
 								<int key="NSCellFlags2">0</int>
 							</object>
-							<reference key="NSSelectedCell" ref="252980217"/>
-							<object class="NSColor" key="NSBackgroundColor" id="960181000">
+							<reference key="NSSelectedCell" ref="939639540"/>
+							<object class="NSColor" key="NSBackgroundColor" id="157808288">
 								<int key="NSColorSpace">6</int>
 								<string key="NSCatalogName">System</string>
 								<string key="NSColorName">controlColor</string>
@@ -409,6 +410,7 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{248, 348}, {95, 17}}</string>
 							<reference key="NSSuperview" ref="823886803"/>
+							<int key="NSViewLayerContentsRedrawPolicy">2</int>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="704532371">
 								<int key="NSCellFlags">68288064</int>
@@ -423,19 +425,20 @@
 								<reference key="NSTextColor" ref="873498266"/>
 							</object>
 						</object>
-						<object class="NSTextField" id="530289261">
+						<object class="NSTextField" id="366835592">
 							<reference key="NSNextResponder" ref="823886803"/>
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{17, 348}, {154, 17}}</string>
 							<reference key="NSSuperview" ref="823886803"/>
+							<int key="NSViewLayerContentsRedrawPolicy">2</int>
 							<bool key="NSEnabled">YES</bool>
-							<object class="NSTextFieldCell" key="NSCell" id="1012402459">
+							<object class="NSTextFieldCell" key="NSCell" id="813486449">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">272630784</int>
 								<string key="NSContents">Label</string>
 								<reference key="NSSupport" ref="504390317"/>
-								<reference key="NSControlView" ref="530289261"/>
-								<reference key="NSBackgroundColor" ref="960181000"/>
+								<reference key="NSControlView" ref="366835592"/>
+								<reference key="NSBackgroundColor" ref="157808288"/>
 								<object class="NSColor" key="NSTextColor">
 									<int key="NSColorSpace">6</int>
 									<string key="NSCatalogName">System</string>
@@ -447,9 +450,20 @@
 								</object>
 							</object>
 						</object>
+						<object class="NSCustomView" id="50697484">
+							<reference key="NSNextResponder" ref="823886803"/>
+							<int key="NSvFlags">268</int>
+							<string key="NSFrame">{{20, 20}, {320, 320}}</string>
+							<reference key="NSSuperview" ref="823886803"/>
+							<bool key="NSViewIsLayerTreeHost">YES</bool>
+							<double key="NSViewAlphaValue">0.0</double>
+							<int key="NSViewLayerContentsRedrawPolicy">2</int>
+							<string key="NSClassName">InputEvtMask</string>
+						</object>
 					</array>
 					<string key="NSFrameSize">{360, 385}</string>
 					<reference key="NSSuperview"/>
+					<int key="NSViewLayerContentsRedrawPolicy">2</int>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
 				<string key="NSMinSize">{360, 407}</string>
@@ -2134,20 +2148,20 @@
 					<int key="connectionID">795</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">performClick:</string>
-						<reference key="source" ref="612578685"/>
-						<reference key="destination" ref="454517146"/>
-					</object>
-					<int key="connectionID">929</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">textField</string>
 						<reference key="source" ref="612578685"/>
-						<reference key="destination" ref="530289261"/>
+						<reference key="destination" ref="366835592"/>
 					</object>
 					<int key="connectionID">999</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">eventMask</string>
+						<reference key="source" ref="612578685"/>
+						<reference key="destination" ref="50697484"/>
+					</object>
+					<int key="connectionID">1002</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -2191,7 +2205,8 @@
 						<array class="NSMutableArray" key="children">
 							<reference ref="454517146"/>
 							<reference ref="469476020"/>
-							<reference ref="530289261"/>
+							<reference ref="366835592"/>
+							<reference ref="50697484"/>
 						</array>
 						<reference key="parent" ref="483958638"/>
 					</object>
@@ -3026,71 +3041,71 @@
 						<int key="objectID">522</int>
 						<reference key="object" ref="454517146"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="325199288"/>
-							<reference ref="252980217"/>
-							<reference ref="689781337"/>
-							<reference ref="431492297"/>
-							<reference ref="848722103"/>
-							<reference ref="196041048"/>
-							<reference ref="270293076"/>
-							<reference ref="280581881"/>
-							<reference ref="999627125"/>
-							<reference ref="723768566"/>
-							<reference ref="620063604"/>
-							<reference ref="880851830"/>
-							<reference ref="897680062"/>
-							<reference ref="62078273"/>
-							<reference ref="157139160"/>
-							<reference ref="822058164"/>
-							<reference ref="857163461"/>
-							<reference ref="761554862"/>
-							<reference ref="264763344"/>
-							<reference ref="394035342"/>
-							<reference ref="279323799"/>
-							<reference ref="377194157"/>
-							<reference ref="528649055"/>
-							<reference ref="1000780030"/>
-							<reference ref="728094942"/>
-							<reference ref="267564279"/>
-							<reference ref="180016424"/>
-							<reference ref="184640380"/>
-							<reference ref="154001456"/>
-							<reference ref="900441006"/>
-							<reference ref="25850499"/>
-							<reference ref="892439175"/>
-							<reference ref="151896471"/>
-							<reference ref="715630837"/>
-							<reference ref="250187650"/>
-							<reference ref="1000617574"/>
-							<reference ref="911670885"/>
-							<reference ref="520479726"/>
-							<reference ref="207455633"/>
-							<reference ref="837554188"/>
-							<reference ref="170504470"/>
-							<reference ref="827518237"/>
-							<reference ref="644662195"/>
-							<reference ref="1068183532"/>
-							<reference ref="889595510"/>
-							<reference ref="801800356"/>
-							<reference ref="816497873"/>
-							<reference ref="673017146"/>
-							<reference ref="489611395"/>
-							<reference ref="7517394"/>
-							<reference ref="1067051488"/>
-							<reference ref="768934195"/>
-							<reference ref="384710551"/>
-							<reference ref="521956720"/>
-							<reference ref="695970402"/>
-							<reference ref="39063669"/>
-							<reference ref="789520000"/>
-							<reference ref="875985827"/>
-							<reference ref="223703049"/>
-							<reference ref="943518458"/>
-							<reference ref="702683010"/>
-							<reference ref="249552549"/>
-							<reference ref="762215809"/>
-							<reference ref="854578481"/>
-							<reference ref="965182386"/>
+							<reference ref="759061538"/>
+							<reference ref="939639540"/>
+							<reference ref="673071674"/>
+							<reference ref="746666887"/>
+							<reference ref="798124207"/>
+							<reference ref="388847851"/>
+							<reference ref="548908891"/>
+							<reference ref="1021824258"/>
+							<reference ref="258624485"/>
+							<reference ref="177848078"/>
+							<reference ref="197632984"/>
+							<reference ref="1020837296"/>
+							<reference ref="1032425559"/>
+							<reference ref="89071547"/>
+							<reference ref="959495932"/>
+							<reference ref="740135967"/>
+							<reference ref="892179996"/>
+							<reference ref="344890471"/>
+							<reference ref="655299010"/>
+							<reference ref="385355986"/>
+							<reference ref="974531304"/>
+							<reference ref="324238465"/>
+							<reference ref="523195170"/>
+							<reference ref="524869022"/>
+							<reference ref="882772430"/>
+							<reference ref="389090887"/>
+							<reference ref="891703614"/>
+							<reference ref="1040579719"/>
+							<reference ref="744597000"/>
+							<reference ref="192311778"/>
+							<reference ref="117953848"/>
+							<reference ref="795293484"/>
+							<reference ref="951372316"/>
+							<reference ref="791024522"/>
+							<reference ref="468216548"/>
+							<reference ref="675752700"/>
+							<reference ref="106128551"/>
+							<reference ref="1017122441"/>
+							<reference ref="623835133"/>
+							<reference ref="364752036"/>
+							<reference ref="121228694"/>
+							<reference ref="821467118"/>
+							<reference ref="311845509"/>
+							<reference ref="79910431"/>
+							<reference ref="910537665"/>
+							<reference ref="197599616"/>
+							<reference ref="820045398"/>
+							<reference ref="728973838"/>
+							<reference ref="542489087"/>
+							<reference ref="401600586"/>
+							<reference ref="40586002"/>
+							<reference ref="443276568"/>
+							<reference ref="725838051"/>
+							<reference ref="563780172"/>
+							<reference ref="968142593"/>
+							<reference ref="534868657"/>
+							<reference ref="952868062"/>
+							<reference ref="786102384"/>
+							<reference ref="501704553"/>
+							<reference ref="623721239"/>
+							<reference ref="978413162"/>
+							<reference ref="619657401"/>
+							<reference ref="345270900"/>
+							<reference ref="856043653"/>
+							<reference ref="336938100"/>
 						</array>
 						<reference key="parent" ref="823886803"/>
 					</object>
@@ -3109,347 +3124,353 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">931</int>
-						<reference key="object" ref="325199288"/>
+						<reference key="object" ref="759061538"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">932</int>
-						<reference key="object" ref="252980217"/>
+						<reference key="object" ref="939639540"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">933</int>
-						<reference key="object" ref="689781337"/>
+						<reference key="object" ref="673071674"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">934</int>
-						<reference key="object" ref="431492297"/>
+						<reference key="object" ref="746666887"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">935</int>
-						<reference key="object" ref="848722103"/>
+						<reference key="object" ref="798124207"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">936</int>
-						<reference key="object" ref="196041048"/>
+						<reference key="object" ref="388847851"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">937</int>
-						<reference key="object" ref="270293076"/>
+						<reference key="object" ref="548908891"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">938</int>
-						<reference key="object" ref="280581881"/>
+						<reference key="object" ref="1021824258"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">939</int>
-						<reference key="object" ref="999627125"/>
+						<reference key="object" ref="258624485"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">940</int>
-						<reference key="object" ref="723768566"/>
+						<reference key="object" ref="177848078"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">941</int>
-						<reference key="object" ref="620063604"/>
+						<reference key="object" ref="197632984"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">942</int>
-						<reference key="object" ref="880851830"/>
+						<reference key="object" ref="1020837296"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">943</int>
-						<reference key="object" ref="897680062"/>
+						<reference key="object" ref="1032425559"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">944</int>
-						<reference key="object" ref="62078273"/>
+						<reference key="object" ref="89071547"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">945</int>
-						<reference key="object" ref="157139160"/>
+						<reference key="object" ref="959495932"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">946</int>
-						<reference key="object" ref="822058164"/>
+						<reference key="object" ref="740135967"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">947</int>
-						<reference key="object" ref="857163461"/>
+						<reference key="object" ref="892179996"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">948</int>
-						<reference key="object" ref="761554862"/>
+						<reference key="object" ref="344890471"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">949</int>
-						<reference key="object" ref="264763344"/>
+						<reference key="object" ref="655299010"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">950</int>
-						<reference key="object" ref="394035342"/>
+						<reference key="object" ref="385355986"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">951</int>
-						<reference key="object" ref="279323799"/>
+						<reference key="object" ref="974531304"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">952</int>
-						<reference key="object" ref="377194157"/>
+						<reference key="object" ref="324238465"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">953</int>
-						<reference key="object" ref="528649055"/>
+						<reference key="object" ref="523195170"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">954</int>
-						<reference key="object" ref="1000780030"/>
+						<reference key="object" ref="524869022"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">955</int>
-						<reference key="object" ref="728094942"/>
+						<reference key="object" ref="882772430"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">956</int>
-						<reference key="object" ref="267564279"/>
+						<reference key="object" ref="389090887"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">957</int>
-						<reference key="object" ref="180016424"/>
+						<reference key="object" ref="891703614"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">958</int>
-						<reference key="object" ref="184640380"/>
+						<reference key="object" ref="1040579719"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">959</int>
-						<reference key="object" ref="154001456"/>
+						<reference key="object" ref="744597000"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">960</int>
-						<reference key="object" ref="900441006"/>
+						<reference key="object" ref="192311778"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">961</int>
-						<reference key="object" ref="25850499"/>
+						<reference key="object" ref="117953848"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">962</int>
-						<reference key="object" ref="892439175"/>
+						<reference key="object" ref="795293484"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">963</int>
-						<reference key="object" ref="151896471"/>
+						<reference key="object" ref="951372316"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">964</int>
-						<reference key="object" ref="715630837"/>
+						<reference key="object" ref="791024522"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">965</int>
-						<reference key="object" ref="250187650"/>
+						<reference key="object" ref="468216548"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">966</int>
-						<reference key="object" ref="1000617574"/>
+						<reference key="object" ref="675752700"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">967</int>
-						<reference key="object" ref="911670885"/>
+						<reference key="object" ref="106128551"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">968</int>
-						<reference key="object" ref="520479726"/>
+						<reference key="object" ref="1017122441"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">969</int>
-						<reference key="object" ref="207455633"/>
+						<reference key="object" ref="623835133"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">970</int>
-						<reference key="object" ref="837554188"/>
+						<reference key="object" ref="364752036"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">971</int>
-						<reference key="object" ref="170504470"/>
+						<reference key="object" ref="121228694"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">972</int>
-						<reference key="object" ref="827518237"/>
+						<reference key="object" ref="821467118"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">973</int>
-						<reference key="object" ref="644662195"/>
+						<reference key="object" ref="311845509"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">974</int>
-						<reference key="object" ref="1068183532"/>
+						<reference key="object" ref="79910431"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">975</int>
-						<reference key="object" ref="889595510"/>
+						<reference key="object" ref="910537665"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">976</int>
-						<reference key="object" ref="801800356"/>
+						<reference key="object" ref="197599616"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">977</int>
-						<reference key="object" ref="816497873"/>
+						<reference key="object" ref="820045398"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">978</int>
-						<reference key="object" ref="673017146"/>
+						<reference key="object" ref="728973838"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">979</int>
-						<reference key="object" ref="489611395"/>
+						<reference key="object" ref="542489087"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">980</int>
-						<reference key="object" ref="7517394"/>
+						<reference key="object" ref="401600586"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">981</int>
-						<reference key="object" ref="1067051488"/>
+						<reference key="object" ref="40586002"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">982</int>
-						<reference key="object" ref="768934195"/>
+						<reference key="object" ref="443276568"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">983</int>
-						<reference key="object" ref="384710551"/>
+						<reference key="object" ref="725838051"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">984</int>
-						<reference key="object" ref="521956720"/>
+						<reference key="object" ref="563780172"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">985</int>
-						<reference key="object" ref="695970402"/>
+						<reference key="object" ref="968142593"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">986</int>
-						<reference key="object" ref="39063669"/>
+						<reference key="object" ref="534868657"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">987</int>
-						<reference key="object" ref="789520000"/>
+						<reference key="object" ref="952868062"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">988</int>
-						<reference key="object" ref="875985827"/>
+						<reference key="object" ref="786102384"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">989</int>
-						<reference key="object" ref="223703049"/>
+						<reference key="object" ref="501704553"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">990</int>
-						<reference key="object" ref="943518458"/>
+						<reference key="object" ref="623721239"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">991</int>
-						<reference key="object" ref="702683010"/>
+						<reference key="object" ref="978413162"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">992</int>
-						<reference key="object" ref="249552549"/>
+						<reference key="object" ref="619657401"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">993</int>
-						<reference key="object" ref="762215809"/>
+						<reference key="object" ref="345270900"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">994</int>
-						<reference key="object" ref="854578481"/>
+						<reference key="object" ref="856043653"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">995</int>
-						<reference key="object" ref="965182386"/>
+						<reference key="object" ref="336938100"/>
 						<reference key="parent" ref="454517146"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">996</int>
-						<reference key="object" ref="530289261"/>
+						<reference key="object" ref="366835592"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="1012402459"/>
+							<reference ref="813486449"/>
 						</array>
 						<reference key="parent" ref="823886803"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">997</int>
-						<reference key="object" ref="1012402459"/>
-						<reference key="parent" ref="530289261"/>
+						<reference key="object" ref="813486449"/>
+						<reference key="parent" ref="366835592"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">1001</int>
+						<reference key="object" ref="50697484"/>
+						<reference key="parent" ref="823886803"/>
 					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
 				<string key="-3.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="-3.ImportedFromIB2"/>
+				<string key="1001.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="129.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="129.ImportedFromIB2"/>
 				<string key="130.IBEditorWindowLastContentRect">{{370, 880}, {64, 6}}</string>
@@ -3703,10 +3724,18 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">999</int>
+			<int key="maxID">1002</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">InputEvtMask</string>
+					<string key="superclassName">NSView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">InputEvtMask.h</string>
+					</object>
+				</object>
 				<object class="IBPartialClassDescription">
 					<string key="className">mines_AppDelegate</string>
 					<string key="superclassName">NSObject</string>
@@ -3728,6 +3757,10 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">mines_AppDelegate</string>
 					<string key="superclassName">NSObject</string>
+					<object class="NSMutableDictionary" key="outlets">
+						<string key="NS.key.0">eventMask</string>
+						<string key="NS.object.0">id</string>
+					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBUserSource</string>
 						<string key="minorKey"/>

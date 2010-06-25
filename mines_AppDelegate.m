@@ -14,6 +14,7 @@
 @synthesize window;
 @synthesize minefield;
 @synthesize timer;
+@synthesize eventMask;
 @synthesize textField;
 
 @synthesize engine;
@@ -23,6 +24,7 @@
 	[self.textField setStringValue:@"Click on a Tile to Start!"];
 	self.engine = [[Mines_Engine alloc] initWithApp:self];
 	injectAppDelegate(self);
+	[self.eventMask setDg:self];
 	for(size_t x = 0; x < 8; ++x)
 		for(size_t y = 0; y < 8; ++y)
 			putImageAtTile(BLANK_TILE, x, y);
@@ -32,10 +34,18 @@
 	NSLog(@"mines did finish launching");
 }
 
-- (IBAction)performClick:(id)sender {
-	NSLog(@"Received click at (%d,%d)",[sender selectedRow],[sender selectedColumn]);
-	[engine receiveClickAtRow:[sender selectedRow]
-						  col:[sender selectedColumn]];
+- (void)performClick:(NSPoint)location
+		  rightClick:(BOOL)rightClick {
+	NSLog(@"Received click at (%d,%d)",location.x,location.y);
+	NSInteger row,col;
+	[self.minefield getRow:&row
+					column:&col
+				  forPoint:location];
+	row=abs(7-row);
+	NSLog(@"Click translates to r:%d c:%d",row,col);
+	[engine receiveClickAtRow:row
+						  col:col
+				   rightClick:rightClick];
 }
 
 /**

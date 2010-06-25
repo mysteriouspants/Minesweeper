@@ -25,6 +25,7 @@
 - (id)initWithApp:(mines_AppDelegate *)delegate;
 
 - (void)receiveClickAtRow:(NSInteger)row
-					  col:(NSInteger)col;
+					  col:(NSInteger)col
+			   rightClick:(BOOL)rightClick;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#include <math.h>
 #import "Resources.h"
 @class Mines_Engine;
 
@@ -15,6 +16,7 @@
     NSWindow *window;
     IBOutlet id minefield;
     IBOutlet id timer;
+    IBOutlet id eventMask;
 	IBOutlet NSTextField * textField;
 	
 	Mines_Engine * engine;
@@ -27,6 +29,7 @@
 @property (nonatomic, retain) IBOutlet NSWindow *window;
 @property (nonatomic, retain) IBOutlet id minefield;
 @property (nonatomic, retain) IBOutlet id timer;
+@property (nonatomic, retain) IBOutlet id eventMask;
 @property (nonatomic, retain) NSTextField * textField;
 
 @property (nonatomic, retain) Mines_Engine * engine;
@@ -36,6 +39,7 @@
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
 
 - (IBAction)saveAction:sender;
-- (IBAction)performClick:(id)sender;
+- (IBAction)performClick:(NSPoint)location
+			  rightClick:(BOOL)rightClick;
 
 @end

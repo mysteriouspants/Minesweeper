@@ -31,6 +31,8 @@
 		DA0F4CF411D428A400EBA200 /* exploding bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0F4CF311D428A400EBA200 /* exploding bomb.png */; };
 		DA0F4D0311D445B500EBA200 /* flag bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0F4D0111D445B500EBA200 /* flag bomb.png */; };
 		DA0F4D0411D445B500EBA200 /* qmark bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0F4D0211D445B500EBA200 /* qmark bomb.png */; };
+		DA0F4D1411D4600E00EBA200 /* InputEvtMask.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0F4D1311D4600E00EBA200 /* InputEvtMask.m */; };
+		DA0F4D5D11D4735A00EBA200 /* number 0.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0F4D5C11D4735A00EBA200 /* number 0.png */; };
 		DA673AC011CE147E0072B5FE /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = DA673ABF11CE147E0072B5FE /* flag.png */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,9 @@
 		DA0F4CF311D428A400EBA200 /* exploding bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exploding bomb.png"; sourceTree = "<group>"; };
 		DA0F4D0111D445B500EBA200 /* flag bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag bomb.png"; sourceTree = "<group>"; };
 		DA0F4D0211D445B500EBA200 /* qmark bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qmark bomb.png"; sourceTree = "<group>"; };
+		DA0F4D1211D4600E00EBA200 /* InputEvtMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputEvtMask.h; sourceTree = "<group>"; };
+		DA0F4D1311D4600E00EBA200 /* InputEvtMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputEvtMask.m; sourceTree = "<group>"; };
+		DA0F4D5C11D4735A00EBA200 /* number 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "number 0.png"; sourceTree = "<group>"; };
 		DA673ABF11CE147E0072B5FE /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +97,8 @@
 				DA0F4A0711D1E3CE00EBA200 /* Resources.m */,
 				DA0F4ADC11D2C26C00EBA200 /* Mines Engine.h */,
 				DA0F4ADD11D2C26C00EBA200 /* Mines Engine.m */,
+				DA0F4D1211D4600E00EBA200 /* InputEvtMask.h */,
+				DA0F4D1311D4600E00EBA200 /* InputEvtMask.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -177,6 +184,7 @@
 		DA0F4BB611D2DAD300EBA200 /* programmer art */ = {
 			isa = PBXGroup;
 			children = (
+				DA0F4D5C11D4735A00EBA200 /* number 0.png */,
 				DA0F4D0111D445B500EBA200 /* flag bomb.png */,
 				DA0F4D0211D445B500EBA200 /* qmark bomb.png */,
 				DA0F4CF311D428A400EBA200 /* exploding bomb.png */,
@@ -261,6 +269,7 @@
 				DA0F4CF411D428A400EBA200 /* exploding bomb.png in Resources */,
 				DA0F4D0311D445B500EBA200 /* flag bomb.png in Resources */,
 				DA0F4D0411D445B500EBA200 /* qmark bomb.png in Resources */,
+				DA0F4D5D11D4735A00EBA200 /* number 0.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +285,7 @@
 				770B37ED0679A11B001EADE2 /* mines_DataModel.xcdatamodel in Sources */,
 				DA0F4A0811D1E3CE00EBA200 /* Resources.m in Sources */,
 				DA0F4ADE11D2C26C00EBA200 /* Mines Engine.m in Sources */,
+				DA0F4D1411D4600E00EBA200 /* InputEvtMask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
