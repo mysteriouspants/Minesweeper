@@ -10,11 +10,11 @@
 #import "mines_AppDelegate.h"
 
 typedef enum {
-	EMPTY=  0x0000,
-	CLICKED=0x0001,
-	MINED=  0x0002,
-	FLAGGED=0x0004,
-	QMARKED=0x0008
+	EMPTY=  0x0000, // 0000
+	CLICKED=0x0001, // 0001
+	MINED=  0x0002, // 0010
+	FLAGGED=0x0004, // 0100
+	QMARKED=0x0008  // 1000
 } tileState;
 
 NSInteger dx[8] = { -1, +0, +1, +1, +1, +0, -1, -1 };
@@ -29,8 +29,8 @@ NSInteger dy[8] = { +1, +1, +1, +0, -1, -1, -1, +0 };
 tileState minefield[MINES_ROWS][MINES_COLS];
 BOOL randomSeeded=NO;
 // percentage of tiles allowed to be mines
-CGFloat minesMin = 0.1500f;
-CGFloat minesMax = 0.4500f;
+CGFloat minesMin = 0.2000f;
+CGFloat minesMax = 0.2000f;
 
 @implementation Mines_Engine
 
