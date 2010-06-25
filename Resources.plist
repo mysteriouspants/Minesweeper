@@ -8,6 +8,8 @@
 		<dict>
 			<key>bomb</key>
 			<string>bomb.png</string>
+			<key>number 0</key>
+			<string>number 0.png</string>
 			<key>number 1</key>
 			<string>number 1.png</string>
 			<key>number 2</key>
@@ -30,34 +32,48 @@
 			<string>flag.png</string>
 			<key>blank tile</key>
 			<string>blank tile.png</string>
+			<key>exploded bomb</key>
+			<string>exploding bomb.png</string>
+			<key>bomb flag</key>
+			<string>flag bomb.png</string>
+			<key>bomb qmark</key>
+			<string>qmark bomb.png</string>
 		</dict>
 	</dict>
 	<key>Image Enum Mappings</key>
 	<dict>
 		<key>0</key>
-		<string>blank tile</string>
+		<string>number 0</string>
 		<key>1</key>
-		<string>bomb</string>
-		<key>2</key>
-		<string>question mark</string>
-		<key>3</key>
-		<string>flag</string>
-		<key>4</key>
 		<string>number 1</string>
-		<key>5</key>
+		<key>2</key>
 		<string>number 2</string>
-		<key>6</key>
+		<key>3</key>
 		<string>number 3</string>
-		<key>7</key>
+		<key>4</key>
 		<string>number 4</string>
-		<key>8</key>
+		<key>5</key>
 		<string>number 5</string>
-		<key>9</key>
+		<key>6</key>
 		<string>number 6</string>
-		<key>10</key>
+		<key>7</key>
 		<string>number 7</string>
-		<key>11</key>
+		<key>8</key>
 		<string>number 8</string>
+		<key>9</key>
+		<string>blank tile</string>
+		<key>10</key>
+		<string>bomb</string>
+		<key>11</key>
+		<string>question mark</string>
+		<key>12</key>
+		<string>flag</string>
+		<key>13</key>
+		<string>exploded bomb</string>
+		<key>14</key>
+		<string>bomb flag</string>
+		<key>15</key>
+		<string>bomb qmark</string>
 	</dict>
 </dict>
 </plist>

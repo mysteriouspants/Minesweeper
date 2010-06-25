@@ -10,10 +10,7 @@
 @class mines_AppDelegate;
 
 typedef enum {
-	BLANK_TILE=0,
-	BOMB_TILE,
-	QUESTION_MARK,
-	FLAG_TILE,
+	NUM_0=0,
 	NUM_1,
 	NUM_2,
 	NUM_3,
@@ -21,7 +18,14 @@ typedef enum {
 	NUM_5,
 	NUM_6,
 	NUM_7,
-	NUM_8
+	NUM_8,
+	BLANK_TILE,
+	BOMB_TILE,
+	QUESTION_MARK,
+	FLAG_TILE,
+	EXPLODED_BOMB,
+	BOMB_FLAG_TILE,
+	BOMB_QMARK_TILE
 } IMAGE;
 
 void injectAppDelegate(mines_AppDelegate * dg);
