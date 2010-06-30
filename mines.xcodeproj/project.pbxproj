@@ -80,7 +80,7 @@
 		DA673ABF11CE147E0072B5FE /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
 		DAE3EDF611DBBDEA0034471C /* Minefield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Minefield.h; sourceTree = "<group>"; };
 		DAE3EDF711DBBDEA0034471C /* Minefield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Minefield.m; sourceTree = "<group>"; };
-		DAE3EE7111DBFE020034471C /* mines-test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "mines-test.octest"; path = "build/Debug/mines-test.octest"; sourceTree = "<group>"; };
+		DAE3EE7111DBFE020034471C /* mines-test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mines-test.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE3EE7211DBFE020034471C /* mines-test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mines-test-Info.plist"; sourceTree = "<group>"; };
 		DAE3EE8511DBFE670034471C /* TestMinefield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMinefield.h; sourceTree = "<group>"; };
 		DAE3EE8611DBFE670034471C /* TestMinefield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMinefield.m; sourceTree = "<group>"; };
