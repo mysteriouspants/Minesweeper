@@ -34,6 +34,7 @@
 		DA0F4D1411D4600E00EBA200 /* InputEvtMask.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0F4D1311D4600E00EBA200 /* InputEvtMask.m */; };
 		DA0F4D5D11D4735A00EBA200 /* number 0.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0F4D5C11D4735A00EBA200 /* number 0.png */; };
 		DA673AC011CE147E0072B5FE /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = DA673ABF11CE147E0072B5FE /* flag.png */; };
+		DAE3EDF811DBBDEA0034471C /* Minefield.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE3EDF711DBBDEA0034471C /* Minefield.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,8 @@
 		DA0F4D1311D4600E00EBA200 /* InputEvtMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputEvtMask.m; sourceTree = "<group>"; };
 		DA0F4D5C11D4735A00EBA200 /* number 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "number 0.png"; sourceTree = "<group>"; };
 		DA673ABF11CE147E0072B5FE /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
+		DAE3EDF611DBBDEA0034471C /* Minefield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Minefield.h; sourceTree = "<group>"; };
+		DAE3EDF711DBBDEA0034471C /* Minefield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Minefield.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				DA0F4ADD11D2C26C00EBA200 /* Mines Engine.m */,
 				DA0F4D1211D4600E00EBA200 /* InputEvtMask.h */,
 				DA0F4D1311D4600E00EBA200 /* InputEvtMask.m */,
+				DAE3EDF611DBBDEA0034471C /* Minefield.h */,
+				DAE3EDF711DBBDEA0034471C /* Minefield.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 				DA0F4A0811D1E3CE00EBA200 /* Resources.m in Sources */,
 				DA0F4ADE11D2C26C00EBA200 /* Mines Engine.m in Sources */,
 				DA0F4D1411D4600E00EBA200 /* InputEvtMask.m in Sources */,
+				DAE3EDF811DBBDEA0034471C /* Minefield.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

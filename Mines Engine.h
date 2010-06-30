@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Minefield.h"
 
 #include <stdlib.h>
 
@@ -16,11 +17,13 @@
 	__weak mines_AppDelegate * dg;
 	NSDate * gameStart;
 	NSTimer * gameTimer;
+	s_minefield * mines;
 }
 
 @property(readwrite,assign) mines_AppDelegate * dg;
 @property(readwrite,retain) NSDate * gameStart;
 @property(readwrite,retain) NSTimer * gameTimer;
+@property(readwrite,assign) s_minefield * mines;
 
 - (id)initWithApp:(mines_AppDelegate *)delegate;
 

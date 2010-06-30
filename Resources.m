@@ -67,19 +67,23 @@ bool putImageAtTile(const IMAGE image_id, const NSInteger x, const NSInteger y) 
 	[c setImage:getImage(image_id)];
 	return TRUE;
 }
-
+// set to false to emit information about images
+#define RESOURCE_PROBLEMS FALSE
 NSImage * getImage(const IMAGE image_id) {
 	if(!__resources_init())
 		return nil;
 	NSAutoreleasePool * pool0 = [[NSAutoreleasePool alloc] init];
-	
-	NSLog(@"Getting Image:");
-	NSLog(@"    Image ID:   %d", image_id);
+	if(RESOURCE_PROBLEMS) {
+		NSLog(@"Getting Image:");
+		NSLog(@"    Image ID:   %d", image_id);
+	}
 	NSString * image_name = [__image_enum_map objectForKey:
 							 [NSNumber numberWithInteger:image_id]];
-	NSLog(@"    Image Name: %@", image_name);
+	if(RESOURCE_PROBLEMS)
+		NSLog(@"    Image Name: %@", image_name);
 	NSString * image_file = [__current_image_set objectForKey:image_name];
-	NSLog(@"    Image File: %@", image_file);
+	if(RESOURCE_PROBLEMS)
+		NSLog(@"    Image File: %@", image_file);
 	
 	NSString * path = [[NSString alloc] initWithFormat:@"%@/%@",
 					   [[NSBundle mainBundle] resourcePath],
@@ -87,9 +91,10 @@ NSImage * getImage(const IMAGE image_id) {
 	NSImage * i = [[NSImage alloc] initWithContentsOfFile:path];
 	[path release];
 	[pool0 release];
-	if(i == nil)
-		NSLog(@"    returning nil");
-	else
-		NSLog(@"    returning image");
+	if(RESOURCE_PROBLEMS)
+		if(i == nil)
+			NSLog(@"    returning nil");
+		else
+			NSLog(@"    returning image");
 	return [i autorelease];
 }
