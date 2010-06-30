@@ -17,25 +17,25 @@ typedef enum {
 	QMARKED=0x0008  // 1000
 } tileState;
 
-static NSInteger mines_dx[8] = { -1, +0, +1, +1, +1, +0, -1, -1 };
-static NSInteger mines_dy[8] = { +1, +1, +1, +0, -1, -1, -1, +0 };
+static const NSInteger mines_dx[8] = { -1, +0, +1, +1, +1, +0, -1, -1 };
+static const NSInteger mines_dy[8] = { +1, +1, +1, +0, -1, -1, -1, +0 };
 
 typedef struct {
-	NSUInteger x;
-	NSUInteger y;
+	NSInteger x;
+	NSInteger y;
 	tileState **minefield;
 } s_minefield;
 
-s_minefield* MakeMinefield(NSUInteger row,
-						   NSUInteger col);
+s_minefield* MakeMinefield(NSInteger row,
+						   NSInteger col);
 void freeMinefield(s_minefield *minefield);
 BOOL inBounds(s_minefield * mines,
-			  NSInteger row,
-			  NSInteger col);
+			  const NSInteger row,
+			  const NSInteger col);
 
-NSUInteger adjacentMines(s_minefield *minefield,
-						 NSInteger row,
-						 NSInteger col);
+NSInteger adjacentMines(s_minefield *minefield,
+						const NSInteger row,
+						const NSInteger col);
 s_minefield* generateMinefield(CGFloat minesMin,
 							   CGFloat minesMax);
 BOOL winConditions(s_minefield *mines);

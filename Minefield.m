@@ -18,10 +18,12 @@ BOOL seedRandom() {
 	return randomSeeded;
 }
 
-s_minefield* MakeMinefield(NSUInteger row,
-						  NSUInteger col) {
+s_minefield* MakeMinefield(NSInteger row,
+						   NSInteger col) {
 	s_minefield * minefield = (s_minefield*)malloc(sizeof(s_minefield));
 	minefield->minefield = malloc(row * sizeof(tileState *));
+	minefield->x = row;
+	minefield->y = col;
 	for(NSInteger i=0; i<row; ++i)
 		minefield->minefield[i] = malloc(col * sizeof(tileState));
 	return minefield;
@@ -33,26 +35,28 @@ void freeMinefield(s_minefield *minefield) {
 }
 
 BOOL inBounds(s_minefield * mines,
-			  NSInteger row,
-			  NSInteger col) {
-	if(((row < 0 || row > mines->x) || (col < 0 || col > mines->y)))
+			  const NSInteger row,
+			  const NSInteger col) {
+	if(((row < 0 || row >= mines->x) || (col < 0 || col >= mines->y)))
 		return NO;
 	else
 		return YES;
 }
 
-NSUInteger adjacentMines(s_minefield *minefield,
-						 NSInteger row,
-						 NSInteger col) {
-	NSUInteger i,mine_count = 0L;
+NSInteger adjacentMines(s_minefield *minefield,
+						const NSInteger row,
+						const NSInteger col) {
+	NSInteger i,mine_count = 0;
 	NSInteger drow,dcol;
 	for(i=0; i<8; ++i) {
 		drow = row + mines_dx[i];
 		dcol = col + mines_dy[i];
-		if(!inBounds(minefield,drow,dcol))
-			continue;
-		else if(HAS_MINE(minefield,drow,dcol))
-			++mine_count;
+		if(inBounds(minefield,drow,dcol))
+			if(HAS_MINE(minefield,drow,dcol)) {
+				++mine_count;
+				NSLog(@"there was a mine at %ld, %ld",drow,dcol);
+			}
+		//			++mine_count;
 	}
 	return mine_count;
 }
@@ -107,7 +111,7 @@ BOOL winConditions(s_minefield *mines) {
 void logMinefield(s_minefield *mines) {
 	NSAutoreleasePool * pool0 = [[NSAutoreleasePool alloc] init];
 	NSMutableString * toLog = [[NSMutableString alloc] initWithString:@"\n"];
-	NSUInteger i,j;
+	NSInteger i,j;
 	for(i=0; i<MINES_ROWS; ++i) {
 		[toLog appendFormat:@"%2d ",i];
 		for(j=0; j<MINES_COLS; ++j) {

@@ -35,6 +35,9 @@
 		DA0F4D5D11D4735A00EBA200 /* number 0.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0F4D5C11D4735A00EBA200 /* number 0.png */; };
 		DA673AC011CE147E0072B5FE /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = DA673ABF11CE147E0072B5FE /* flag.png */; };
 		DAE3EDF811DBBDEA0034471C /* Minefield.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE3EDF711DBBDEA0034471C /* Minefield.m */; };
+		DAE3EE7711DBFE210034471C /* Minefield.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE3EDF711DBBDEA0034471C /* Minefield.m */; };
+		DAE3EE7A11DBFE340034471C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		DAE3EE8711DBFE670034471C /* TestMinefield.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE3EE8611DBFE670034471C /* TestMinefield.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +80,10 @@
 		DA673ABF11CE147E0072B5FE /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
 		DAE3EDF611DBBDEA0034471C /* Minefield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Minefield.h; sourceTree = "<group>"; };
 		DAE3EDF711DBBDEA0034471C /* Minefield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Minefield.m; sourceTree = "<group>"; };
+		DAE3EE7111DBFE020034471C /* mines-test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "mines-test.octest"; path = "build/Debug/mines-test.octest"; sourceTree = "<group>"; };
+		DAE3EE7211DBFE020034471C /* mines-test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mines-test-Info.plist"; sourceTree = "<group>"; };
+		DAE3EE8511DBFE670034471C /* TestMinefield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMinefield.h; sourceTree = "<group>"; };
+		DAE3EE8611DBFE670034471C /* TestMinefield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMinefield.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +92,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE3EE6E11DBFE020034471C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE3EE7A11DBFE340034471C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +119,8 @@
 				DA0F4D1311D4600E00EBA200 /* InputEvtMask.m */,
 				DAE3EDF611DBBDEA0034471C /* Minefield.h */,
 				DAE3EDF711DBBDEA0034471C /* Minefield.m */,
+				DAE3EE8511DBFE670034471C /* TestMinefield.h */,
+				DAE3EE8611DBFE670034471C /* TestMinefield.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -130,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* mines.app */,
+				DAE3EE7111DBFE020034471C /* mines-test.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +161,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				DAE3EE7211DBFE020034471C /* mines-test-Info.plist */,
 			);
 			name = mines;
 			sourceTree = "<group>";
@@ -230,6 +249,24 @@
 			productReference = 8D1107320486CEB800E47090 /* mines.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DAE3EE7011DBFE020034471C /* mines-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAE3EE7611DBFE030034471C /* Build configuration list for PBXNativeTarget "mines-test" */;
+			buildPhases = (
+				DAE3EE6C11DBFE020034471C /* Resources */,
+				DAE3EE6D11DBFE020034471C /* Sources */,
+				DAE3EE6E11DBFE020034471C /* Frameworks */,
+				DAE3EE6F11DBFE020034471C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mines-test";
+			productName = "mines-test";
+			productReference = DAE3EE7111DBFE020034471C /* mines-test.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -246,6 +283,7 @@
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* mines */,
+				DAE3EE7011DBFE020034471C /* mines-test */,
 			);
 		};
 /* End PBXProject section */
@@ -278,7 +316,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAE3EE6C11DBFE020034471C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DAE3EE6F11DBFE020034471C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D11072C0486CEB800E47090 /* Sources */ = {
@@ -292,6 +353,15 @@
 				DA0F4ADE11D2C26C00EBA200 /* Mines Engine.m in Sources */,
 				DA0F4D1411D4600E00EBA200 /* InputEvtMask.m in Sources */,
 				DAE3EDF811DBBDEA0034471C /* Minefield.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE3EE6D11DBFE020034471C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE3EE7711DBFE210034471C /* Minefield.m in Sources */,
+				DAE3EE8711DBFE670034471C /* TestMinefield.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +446,60 @@
 			};
 			name = Release;
 		};
+		DAE3EE7411DBFE030034471C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "mines-test-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "mines-test";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DAE3EE7511DBFE030034471C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "mines-test-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "mines-test";
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -393,6 +517,15 @@
 			buildConfigurations = (
 				26FC0A890875C7B200E6366F /* Debug */,
 				26FC0A8A0875C7B200E6366F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAE3EE7611DBFE030034471C /* Build configuration list for PBXNativeTarget "mines-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE3EE7411DBFE030034471C /* Debug */,
+				DAE3EE7511DBFE030034471C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
