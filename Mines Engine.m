@@ -99,17 +99,21 @@ CGFloat minesMax = 0.2000f;
 			}
 		}
 	} else {
-		// cycle through flag/qmark/none
-		if(HAS_QMARK(mines,row,col)) {
-			mines->minefield[row][col] -= QMARKED;
-			putImageAtTile(BLANK_TILE, row, col);
-		} else if(HAS_FLAG(mines,row, col)) {
-			mines->minefield[row][col] -= FLAGGED;
-			mines->minefield[row][col] += QMARKED;
-			putImageAtTile(QUESTION_MARK, row, col);
+		if(HAS_CLICKED(mines,row,col)) {
+			// do nothing
 		} else {
-			mines->minefield[row][col] += FLAGGED;
-			putImageAtTile(FLAG_TILE, row, col);
+			// cycle through flag/qmark/none
+			if(HAS_QMARK(mines,row,col)) {
+				mines->minefield[row][col] -= QMARKED;
+				putImageAtTile(BLANK_TILE, row, col);
+			} else if(HAS_FLAG(mines,row, col)) {
+				mines->minefield[row][col] -= FLAGGED;
+				mines->minefield[row][col] += QMARKED;
+				putImageAtTile(QUESTION_MARK, row, col);
+			} else {
+				mines->minefield[row][col] += FLAGGED;
+				putImageAtTile(FLAG_TILE, row, col);
+			}			
 		}
 	}
 	if(winConditions(mines)) {

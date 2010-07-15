@@ -38,6 +38,10 @@
 		DAE3EE7711DBFE210034471C /* Minefield.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE3EDF711DBBDEA0034471C /* Minefield.m */; };
 		DAE3EE7A11DBFE340034471C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		DAE3EE8711DBFE670034471C /* TestMinefield.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE3EE8611DBFE670034471C /* TestMinefield.m */; };
+		DAE3EEC811ED02670034471C /* HiScore.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE3EEC711ED02670034471C /* HiScore.m */; };
+		DAE3EEC911ED02670034471C /* HiScore.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE3EEC711ED02670034471C /* HiScore.m */; };
+		DAE3EECB11ED033A0034471C /* HiScore.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAE3EECA11ED033A0034471C /* HiScore.xib */; };
+		DAE3EECF11ED05410034471C /* HiScoresCtrllr.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE3EECE11ED05410034471C /* HiScoresCtrllr.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +88,11 @@
 		DAE3EE7211DBFE020034471C /* mines-test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mines-test-Info.plist"; sourceTree = "<group>"; };
 		DAE3EE8511DBFE670034471C /* TestMinefield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMinefield.h; sourceTree = "<group>"; };
 		DAE3EE8611DBFE670034471C /* TestMinefield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMinefield.m; sourceTree = "<group>"; };
+		DAE3EEC611ED02670034471C /* HiScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiScore.h; sourceTree = "<group>"; };
+		DAE3EEC711ED02670034471C /* HiScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HiScore.m; sourceTree = "<group>"; };
+		DAE3EECA11ED033A0034471C /* HiScore.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HiScore.xib; sourceTree = "<group>"; };
+		DAE3EECD11ED05410034471C /* HiScoresCtrllr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiScoresCtrllr.h; sourceTree = "<group>"; };
+		DAE3EECE11ED05410034471C /* HiScoresCtrllr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HiScoresCtrllr.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +130,10 @@
 				DAE3EDF711DBBDEA0034471C /* Minefield.m */,
 				DAE3EE8511DBFE670034471C /* TestMinefield.h */,
 				DAE3EE8611DBFE670034471C /* TestMinefield.m */,
+				DAE3EEC611ED02670034471C /* HiScore.h */,
+				DAE3EEC711ED02670034471C /* HiScore.m */,
+				DAE3EECD11ED05410034471C /* HiScoresCtrllr.h */,
+				DAE3EECE11ED05410034471C /* HiScoresCtrllr.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -184,6 +197,7 @@
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				2F7446970DB6B7EA00F9684A /* MainMenu.xib */,
 				DA0F4A0911D1E40E00EBA200 /* Resources.plist */,
+				DAE3EECA11ED033A0034471C /* HiScore.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -313,6 +327,7 @@
 				DA0F4D0311D445B500EBA200 /* flag bomb.png in Resources */,
 				DA0F4D0411D445B500EBA200 /* qmark bomb.png in Resources */,
 				DA0F4D5D11D4735A00EBA200 /* number 0.png in Resources */,
+				DAE3EECB11ED033A0034471C /* HiScore.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +368,8 @@
 				DA0F4ADE11D2C26C00EBA200 /* Mines Engine.m in Sources */,
 				DA0F4D1411D4600E00EBA200 /* InputEvtMask.m in Sources */,
 				DAE3EDF811DBBDEA0034471C /* Minefield.m in Sources */,
+				DAE3EEC911ED02670034471C /* HiScore.m in Sources */,
+				DAE3EECF11ED05410034471C /* HiScoresCtrllr.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +379,7 @@
 			files = (
 				DAE3EE7711DBFE210034471C /* Minefield.m in Sources */,
 				DAE3EE8711DBFE670034471C /* TestMinefield.m in Sources */,
+				DAE3EEC811ED02670034471C /* HiScore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
