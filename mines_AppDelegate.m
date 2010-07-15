@@ -48,6 +48,10 @@
 				   rightClick:rightClick];
 }
 
+- (IBAction)showHighScores:(id)sender {
+    
+}
+
 /**
     Returns the support directory for the application, used to store the Core Data
     store file.  This code uses a directory named "mines" for
@@ -228,7 +232,6 @@
 
     return NSTerminateNow;
 }
-
 
 /**
     Implementation of dealloc, to release the retained variables.

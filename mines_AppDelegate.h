@@ -26,6 +26,7 @@
     NSManagedObjectContext *managedObjectContext;
 }
 
+
 @property (nonatomic, retain) IBOutlet NSWindow *window;
 @property (nonatomic, retain) IBOutlet id minefield;
 @property (nonatomic, retain) IBOutlet id timer;
@@ -39,6 +40,7 @@
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
 
 - (IBAction)saveAction:sender;
+- (IBAction)showHighScores:(id)sender;
 - (IBAction)performClick:(NSPoint)location
 			  rightClick:(BOOL)rightClick;
 

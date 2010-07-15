@@ -15,4 +15,11 @@
 @dynamic gameStopDate;
 @dynamic playerName;
 
+- (NSString*)description {
+	return [NSString stringWithFormat:@"\"High Score\" : {\n\t\"startDate\" : \"%@\";\t\n\"stopDate\" : \"%@\"\n\t\"playerName\" : \"%@\"\n}",
+			self.gameStartDate,
+			self.gameStopDate,
+			self.playerName];
+}
+
 @end

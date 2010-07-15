@@ -61,9 +61,9 @@ CGFloat minesMax = 0.2000f;
 		
 	}
 	if(rightClick==NO) {
-		if(HAS_MINE(mines,row,col)) {
+		if(HAS_MINE(mines,row,col)&&(!HAS_FLAG(mines,row,col)&&!HAS_QMARK(mines,row,col))) {
 			// you loose
-			[self.dg.textField setStringValue:@"You Lose!"];
+			[self.dg.textField setStringValue:@"You Lose! Click any tile to restart."];
 			[self.gameTimer invalidate];
 			self.gameStart = nil;
 			for(NSInteger j,i=0; i<MINES_ROWS; ++i)
@@ -119,6 +119,18 @@ CGFloat minesMax = 0.2000f;
 		// the game is won
 		[self.gameTimer invalidate];
 		[self.dg.textField setStringValue:@"You win!"];
+
+		NSManagedObjectContext *ctxt = [self.dg managedObjectContext];
+		HiScore *score = [NSEntityDescription insertNewObjectForEntityForName:@"HiScore"
+													   inManagedObjectContext:ctxt];
+		score.gameStartDate = self.gameStart;
+		score.gameStopDate = [NSDate date];
+		// TODO: show a dialog asking for the player's name
+		score.playerName = @"Anonymous";
+		NSError *error;
+		if(![context save:&error]) {
+			NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+		}
 		self.gameStart = nil; // will cause the game to restart if a tile is clicked
 	}
 	[self.dg.window.contentView performSelectorOnMainThread:@selector(display)

@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "Minefield.h"
+#import "HiScore.h"
 
 #include <stdlib.h>
 
