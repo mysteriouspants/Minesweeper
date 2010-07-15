@@ -79,7 +79,7 @@ CGFloat minesMax = 0.2000f;
 					}
 				} 
 			putImageAtTile(EXPLODED_BOMB, row, col);
-		} else {
+		} else if(!HAS_CLICKED(mines,row,col)) {
 			// find how many mines are adjacent
 			mines->minefield[row][col] += CLICKED;
 			NSInteger num_mines = adjacentMines(mines,row,col);
