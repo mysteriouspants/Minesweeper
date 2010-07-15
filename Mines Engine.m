@@ -66,7 +66,6 @@ CGFloat minesMax = 0.2000f;
 			[self.dg.textField setStringValue:@"You Lose!"];
 			[self.gameTimer invalidate];
 			self.gameStart = nil;
-																						// TODO: Expose whole field
 			for(NSInteger j,i=0; i<MINES_ROWS; ++i)
 				for(j=0; j<MINES_COLS; ++j) {
 					if(HAS_MINE(mines,i,j)) {
