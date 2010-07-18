@@ -13,6 +13,23 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		DA0420D111F2EA28000892BB /* McSpider AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = DA0420C011F2EA28000892BB /* McSpider AppIcon.icns */; };
+		DA0420D211F2EA28000892BB /* McSpider blank tile.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420C111F2EA28000892BB /* McSpider blank tile.png */; };
+		DA0420D311F2EA28000892BB /* McSpider bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420C211F2EA28000892BB /* McSpider bomb.png */; };
+		DA0420D411F2EA28000892BB /* McSpider exploding bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420C311F2EA28000892BB /* McSpider exploding bomb.png */; };
+		DA0420D511F2EA28000892BB /* McSpider flag bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420C411F2EA28000892BB /* McSpider flag bomb.png */; };
+		DA0420D611F2EA28000892BB /* McSpider flag.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420C511F2EA28000892BB /* McSpider flag.png */; };
+		DA0420D711F2EA28000892BB /* McSpider number 0.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420C611F2EA28000892BB /* McSpider number 0.png */; };
+		DA0420D811F2EA28000892BB /* McSpider number 1.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420C711F2EA28000892BB /* McSpider number 1.png */; };
+		DA0420D911F2EA28000892BB /* McSpider number 2.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420C811F2EA28000892BB /* McSpider number 2.png */; };
+		DA0420DA11F2EA28000892BB /* McSpider number 3.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420C911F2EA28000892BB /* McSpider number 3.png */; };
+		DA0420DB11F2EA28000892BB /* McSpider number 4.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420CA11F2EA28000892BB /* McSpider number 4.png */; };
+		DA0420DC11F2EA28000892BB /* McSpider number 5.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420CB11F2EA28000892BB /* McSpider number 5.png */; };
+		DA0420DD11F2EA28000892BB /* McSpider number 6.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420CC11F2EA28000892BB /* McSpider number 6.png */; };
+		DA0420DE11F2EA28000892BB /* McSpider number 7.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420CD11F2EA28000892BB /* McSpider number 7.png */; };
+		DA0420DF11F2EA28000892BB /* McSpider number 8.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420CE11F2EA28000892BB /* McSpider number 8.png */; };
+		DA0420E011F2EA28000892BB /* McSpider qmark bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420CF11F2EA28000892BB /* McSpider qmark bomb.png */; };
+		DA0420E111F2EA28000892BB /* McSpider question mark.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420D011F2EA28000892BB /* McSpider question mark.png */; };
 		DA0F49F611D1E09000EBA200 /* bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0F49EC11D1E09000EBA200 /* bomb.png */; };
 		DA0F49F711D1E09000EBA200 /* number 1.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0F49ED11D1E09000EBA200 /* number 1.png */; };
 		DA0F49F811D1E09000EBA200 /* number 2.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0F49EE11D1E09000EBA200 /* number 2.png */; };
@@ -58,6 +75,23 @@
 		77C8280C06725ACE000B614F /* mines_AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mines_AppDelegate.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* mines-Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; fileEncoding = 4; path = "mines-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* mines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mines.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA0420C011F2EA28000892BB /* McSpider AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "McSpider AppIcon.icns"; sourceTree = "<group>"; };
+		DA0420C111F2EA28000892BB /* McSpider blank tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "McSpider blank tile.png"; sourceTree = "<group>"; };
+		DA0420C211F2EA28000892BB /* McSpider bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "McSpider bomb.png"; sourceTree = "<group>"; };
+		DA0420C311F2EA28000892BB /* McSpider exploding bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "McSpider exploding bomb.png"; sourceTree = "<group>"; };
+		DA0420C411F2EA28000892BB /* McSpider flag bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "McSpider flag bomb.png"; sourceTree = "<group>"; };
+		DA0420C511F2EA28000892BB /* McSpider flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "McSpider flag.png"; sourceTree = "<group>"; };
+		DA0420C611F2EA28000892BB /* McSpider number 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "McSpider number 0.png"; sourceTree = "<group>"; };
+		DA0420C711F2EA28000892BB /* McSpider number 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "McSpider number 1.png"; sourceTree = "<group>"; };
+		DA0420C811F2EA28000892BB /* McSpider number 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "McSpider number 2.png"; sourceTree = "<group>"; };
+		DA0420C911F2EA28000892BB /* McSpider number 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "McSpider number 3.png"; sourceTree = "<group>"; };
+		DA0420CA11F2EA28000892BB /* McSpider number 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "McSpider number 4.png"; sourceTree = "<group>"; };
+		DA0420CB11F2EA28000892BB /* McSpider number 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "McSpider number 5.png"; sourceTree = "<group>"; };
+		DA0420CC11F2EA28000892BB /* McSpider number 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "McSpider number 6.png"; sourceTree = "<group>"; };
+		DA0420CD11F2EA28000892BB /* McSpider number 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "McSpider number 7.png"; sourceTree = "<group>"; };
+		DA0420CE11F2EA28000892BB /* McSpider number 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "McSpider number 8.png"; sourceTree = "<group>"; };
+		DA0420CF11F2EA28000892BB /* McSpider qmark bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "McSpider qmark bomb.png"; sourceTree = "<group>"; };
+		DA0420D011F2EA28000892BB /* McSpider question mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "McSpider question mark.png"; sourceTree = "<group>"; };
 		DA0F49EC11D1E09000EBA200 /* bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bomb.png; sourceTree = "<group>"; };
 		DA0F49ED11D1E09000EBA200 /* number 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "number 1.png"; sourceTree = "<group>"; };
 		DA0F49EE11D1E09000EBA200 /* number 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "number 2.png"; sourceTree = "<group>"; };
@@ -191,8 +225,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DA0420BE11F2EA0C000892BB /* McSpider Art */,
 				DA0F4BB611D2DAD300EBA200 /* programmer art */,
-				DA0F4AD411D2BF7E00EBA200 /* AppIcon.icns */,
 				8D1107310486CEB800E47090 /* mines-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				2F7446970DB6B7EA00F9684A /* MainMenu.xib */,
@@ -219,9 +253,34 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		DA0420BE11F2EA0C000892BB /* McSpider Art */ = {
+			isa = PBXGroup;
+			children = (
+				DA0420C011F2EA28000892BB /* McSpider AppIcon.icns */,
+				DA0420C111F2EA28000892BB /* McSpider blank tile.png */,
+				DA0420C211F2EA28000892BB /* McSpider bomb.png */,
+				DA0420C311F2EA28000892BB /* McSpider exploding bomb.png */,
+				DA0420C411F2EA28000892BB /* McSpider flag bomb.png */,
+				DA0420C511F2EA28000892BB /* McSpider flag.png */,
+				DA0420C611F2EA28000892BB /* McSpider number 0.png */,
+				DA0420C711F2EA28000892BB /* McSpider number 1.png */,
+				DA0420C811F2EA28000892BB /* McSpider number 2.png */,
+				DA0420C911F2EA28000892BB /* McSpider number 3.png */,
+				DA0420CA11F2EA28000892BB /* McSpider number 4.png */,
+				DA0420CB11F2EA28000892BB /* McSpider number 5.png */,
+				DA0420CC11F2EA28000892BB /* McSpider number 6.png */,
+				DA0420CD11F2EA28000892BB /* McSpider number 7.png */,
+				DA0420CE11F2EA28000892BB /* McSpider number 8.png */,
+				DA0420CF11F2EA28000892BB /* McSpider qmark bomb.png */,
+				DA0420D011F2EA28000892BB /* McSpider question mark.png */,
+			);
+			name = "McSpider Art";
+			sourceTree = "<group>";
+		};
 		DA0F4BB611D2DAD300EBA200 /* programmer art */ = {
 			isa = PBXGroup;
 			children = (
+				DA0F4AD411D2BF7E00EBA200 /* AppIcon.icns */,
 				DA0F4D5C11D4735A00EBA200 /* number 0.png */,
 				DA0F4D0111D445B500EBA200 /* flag bomb.png */,
 				DA0F4D0211D445B500EBA200 /* qmark bomb.png */,
@@ -328,6 +387,23 @@
 				DA0F4D0411D445B500EBA200 /* qmark bomb.png in Resources */,
 				DA0F4D5D11D4735A00EBA200 /* number 0.png in Resources */,
 				DAE3EECB11ED033A0034471C /* HiScore.xib in Resources */,
+				DA0420D111F2EA28000892BB /* McSpider AppIcon.icns in Resources */,
+				DA0420D211F2EA28000892BB /* McSpider blank tile.png in Resources */,
+				DA0420D311F2EA28000892BB /* McSpider bomb.png in Resources */,
+				DA0420D411F2EA28000892BB /* McSpider exploding bomb.png in Resources */,
+				DA0420D511F2EA28000892BB /* McSpider flag bomb.png in Resources */,
+				DA0420D611F2EA28000892BB /* McSpider flag.png in Resources */,
+				DA0420D711F2EA28000892BB /* McSpider number 0.png in Resources */,
+				DA0420D811F2EA28000892BB /* McSpider number 1.png in Resources */,
+				DA0420D911F2EA28000892BB /* McSpider number 2.png in Resources */,
+				DA0420DA11F2EA28000892BB /* McSpider number 3.png in Resources */,
+				DA0420DB11F2EA28000892BB /* McSpider number 4.png in Resources */,
+				DA0420DC11F2EA28000892BB /* McSpider number 5.png in Resources */,
+				DA0420DD11F2EA28000892BB /* McSpider number 6.png in Resources */,
+				DA0420DE11F2EA28000892BB /* McSpider number 7.png in Resources */,
+				DA0420DF11F2EA28000892BB /* McSpider number 8.png in Resources */,
+				DA0420E011F2EA28000892BB /* McSpider qmark bomb.png in Resources */,
+				DA0420E111F2EA28000892BB /* McSpider question mark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -128,8 +128,11 @@ CGFloat minesMax = 0.2000f;
 		// TODO: show a dialog asking for the player's name
 		score.playerName = @"Anonymous";
 		NSError *error;
-		if(![context save:&error]) {
+		if(![ctxt save:&error]) {
 			NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+		} else {
+			NSLog(@"Saved new highscore: %@", score);
+			NSLog(@"Context now has %@", [ctxt registeredObjects]);
 		}
 		self.gameStart = nil; // will cause the game to restart if a tile is clicked
 	}

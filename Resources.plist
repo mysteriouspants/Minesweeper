@@ -4,6 +4,41 @@
 <dict>
 	<key>Image Sets</key>
 	<dict>
+		<key>mcspider_art</key>
+		<dict>
+			<key>bomb</key>
+			<string>McSpider bomb.png</string>
+			<key>number 0</key>
+			<string>McSpider number 0.png</string>
+			<key>number 1</key>
+			<string>McSpider number 1.png</string>
+			<key>number 2</key>
+			<string>McSpider number 2.png</string>
+			<key>number 3</key>
+			<string>McSpider number 3.png</string>
+			<key>number 4</key>
+			<string>McSpider number 4.png</string>
+			<key>number 5</key>
+			<string>McSpider number 5.png</string>
+			<key>number 6</key>
+			<string>McSpider number 6.png</string>
+			<key>number 7</key>
+			<string>McSpider number 7.png</string>
+			<key>number 8</key>
+			<string>McSpider number 8.png</string>
+			<key>question mark</key>
+			<string>McSpider question mark.png</string>
+			<key>flag</key>
+			<string>McSpider flag.png</string>
+			<key>blank tile</key>
+			<string>McSpider blank tile.png</string>
+			<key>exploded bomb</key>
+			<string>McSpider exploding bomb.png</string>
+			<key>bomb flag</key>
+			<string>McSpider flag bomb.png</string>
+			<key>bomb qmark</key>
+			<string>McSpider qmark bomb.png</string>
+		</dict>
 		<key>programmer_art</key>
 		<dict>
 			<key>bomb</key>

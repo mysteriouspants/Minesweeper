@@ -38,7 +38,7 @@ BOOL __resources_init() {
 		NSLog(@"FATAL: Cannot find Resources.plist!");
 		return FALSE;
 	}
-	__current_image_set_name = @"programmer_art";
+	__current_image_set_name = @"mcspider_art";
 	__current_image_set = [[__resources objectForKey:@"Image Sets"]
 						   objectForKey:__current_image_set_name];
 	__image_enum_map = [__resources objectForKey:@"Image Enum Mappings"];
