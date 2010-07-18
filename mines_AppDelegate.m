@@ -18,6 +18,7 @@
 @synthesize textField;
 
 @synthesize engine;
+@synthesize hiScoresCtrllr;
 
 - (void)applicationWillFinishLaunching:(NSNotification *)aNotification {
 	NSLog(@"mines will finish launching");
@@ -36,12 +37,12 @@
 
 - (void)performClick:(NSPoint)location
 		  rightClick:(BOOL)rightClick {
-	NSLog(@"Received click at (%d,%d)",location.x,location.y);
+	NSLog(@"Received click at (%f,%f)",location.x,location.y);
 	NSInteger row,col;
 	[self.minefield getRow:&row
 					column:&col
 				  forPoint:location];
-	row=abs(7-row);
+	row=abs(7l-row);
 	NSLog(@"Click translates to r:%d c:%d",row,col);
 	[engine receiveClickAtRow:row
 						  col:col
@@ -49,7 +50,9 @@
 }
 
 - (IBAction)showHighScores:(id)sender {
-	[[[HiScoresCtrllr alloc] initWithWindowNibName:@"HiScore"] window];
+	if(self.hiScoresCtrllr == nil)
+		hiScoresCtrllr = [[HiScoresCtrllr alloc] initWithWindowNibName:@"HiScore"];
+	[hiScoresCtrllr window];
 }
 
 /**
@@ -240,6 +243,8 @@
 - (void)dealloc {
 
     [window release];
+	if(self.hiScoresCtrllr != nil)
+		[hiScoresCtrllr release];
     [managedObjectContext release];
     [persistentStoreCoordinator release];
     [managedObjectModel release];

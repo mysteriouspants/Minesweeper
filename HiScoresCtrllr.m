@@ -21,7 +21,7 @@
 	}
 	return self;
 }
-		[[NSNotificationCenter defaultCenter] postNotificationName:];
+
 - (void)windowDidLoad {
 	[[super window] setDelegate:self];
 	[[NSNotificationCenter defaultCenter] addObserver:self

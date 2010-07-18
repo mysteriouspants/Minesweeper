@@ -21,6 +21,7 @@
 	IBOutlet NSTextField * textField;
 	
 	Mines_Engine * engine;
+	HiScoresCtrllr * hiScoresCtrllr;
     
     NSPersistentStoreCoordinator *persistentStoreCoordinator;
     NSManagedObjectModel *managedObjectModel;
@@ -35,6 +36,7 @@
 @property (nonatomic, retain) NSTextField * textField;
 
 @property (nonatomic, retain) Mines_Engine * engine;
+@property (nonatomic, retain) HiScoresCtrllr * hiScoresCtrllr;
 
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
