@@ -9,8 +9,10 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface HiScoresCtrllr : NSWindowController {
+@interface HiScoresCtrllr : NSWindowController <NSWindowDelegate> {
 
 }
+
+- (void)scoresDidChange;
 
 @end

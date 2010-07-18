@@ -134,6 +134,8 @@ CGFloat minesMax = 0.2000f;
 			NSLog(@"Saved new highscore: %@", score);
 			NSLog(@"Context now has %@", [ctxt registeredObjects]);
 		}
+		// broadcast that the scores have changed, just something unique and not in use by the system
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"FSDEV Mines high scores did change"];
 		self.gameStart = nil; // will cause the game to restart if a tile is clicked
 	}
 	[self.dg.window.contentView performSelectorOnMainThread:@selector(display)

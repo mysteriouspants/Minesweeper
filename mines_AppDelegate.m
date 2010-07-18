@@ -49,7 +49,7 @@
 }
 
 - (IBAction)showHighScores:(id)sender {
-    
+	[[[HiScoresCtrllr alloc] initWithWindowNibName:@"HiScore"] window];
 }
 
 /**

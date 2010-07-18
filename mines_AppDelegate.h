@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #include <math.h>
 #import "Resources.h"
+#import "HiScoresCtrllr.h"
 @class Mines_Engine;
 
 @interface mines_AppDelegate : NSObject 
