@@ -21,16 +21,21 @@ CGFloat minesMax = 0.2000f;
 @synthesize gameStart;
 @synthesize gameTimer;
 @synthesize mines;
+@synthesize blockedByScore;
 
 - (id)initWithApp:(mines_AppDelegate *)delegate {
-	if(self=[super init])
+	if(self=[super init]) {
 		self.dg = delegate;
+		self.blockedByScore=NO;
+	}
 	return self;
 }
 
 - (void)receiveClickAtRow:(NSInteger)row
 					  col:(NSInteger)col
 			   rightClick:(BOOL)rightClick {
+	if(blockedByScore==YES)
+		return;
 	NSAutoreleasePool * pool0 = [[NSAutoreleasePool alloc] init];
 	if(self.gameStart == nil) {		// game has not yet started
 		// start the timer
@@ -118,31 +123,44 @@ CGFloat minesMax = 0.2000f;
 	if(winConditions(mines)) {
 		// the game is won
 		[self.gameTimer invalidate];
-		[self.dg.textField setStringValue:@"You win!"];
-
-		NSManagedObjectContext *ctxt = [self.dg managedObjectContext];
-		HiScore *score = [NSEntityDescription insertNewObjectForEntityForName:@"HiScore"
-													   inManagedObjectContext:ctxt];
-		score.gameStartDate = self.gameStart;
-		score.gameStopDate = [NSDate date];
-		// TODO: show a dialog asking for the player's name
-		score.playerName = @"Anonymous";
-		NSError *error;
-		if(![ctxt save:&error]) {
-			NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
-		} else {
-			NSLog(@"Saved new highscore: %@", score);
-			NSLog(@"Context now has %@", [ctxt registeredObjects]);
-		}
-		// broadcast that the scores have changed, just something unique and not in use by the system
-		[[NSNotificationCenter defaultCenter] postNotificationName:@"FSDEV Mines high scores did change"];
-		self.gameStart = nil; // will cause the game to restart if a tile is clicked
+		self.blockedByScore = YES;
+		// start the name dialog
+		[NSApp beginSheet:self.dg.hiScoreWindow
+		   modalForWindow:self.dg.window
+			modalDelegate:self
+		   didEndSelector:@selector(didEndSheet:returnCode:contextInfo:)
+			  contextInfo:nil];
 	}
 	[self.dg.window.contentView performSelectorOnMainThread:@selector(display)
 												 withObject:nil
 											  waitUntilDone:NO];
 	logMinefield(mines);
 	[pool0 release];
+}
+
+- (void)didEndSheet:(NSWindow *)sheet
+		 returnCode:(NSInteger)returnCode
+		contextInfo:(void *)contextInfo {
+    [sheet orderOut:self];
+	NSManagedObjectContext *ctxt = [self.dg managedObjectContext];
+	HiScore *score = [NSEntityDescription insertNewObjectForEntityForName:@"HiScore"
+												   inManagedObjectContext:ctxt];
+	score.gameStartDate = self.gameStart;
+	score.gameStopDate = [NSDate date];
+	// TODO: show a dialog asking for the player's name
+	score.playerName = [self.dg.hiScoresName stringValue];
+	NSError *error;
+	if(![ctxt save:&error]) {
+		NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+	} else {
+		NSLog(@"Saved new highscore: %@", score);
+		NSLog(@"Context now has %@", [ctxt registeredObjects]);
+	}
+	// broadcast that the scores have changed, just something unique and not in use by the system
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"FSDEV Mines high scores did change"];
+	self.gameStart = nil; // will cause the game to restart if a tile is clicked
+	self.blockedByScore = NO;
+	[self.dg.textField setStringValue:@"You win! Click to restart."];
 }
 						  
 - (void)updateTimer {

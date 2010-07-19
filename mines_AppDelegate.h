@@ -19,6 +19,8 @@
     IBOutlet id timer;
     IBOutlet id eventMask;
 	IBOutlet NSTextField * textField;
+	IBOutlet NSWindow * hiScoreWindow;
+	IBOutlet NSTextField * hiScoresName;
 	
 	Mines_Engine * engine;
 	HiScoresCtrllr * hiScoresCtrllr;
@@ -34,6 +36,8 @@
 @property (nonatomic, retain) IBOutlet id timer;
 @property (nonatomic, retain) IBOutlet id eventMask;
 @property (nonatomic, retain) NSTextField * textField;
+@property (nonatomic, retain) NSWindow * hiScoreWindow;
+@property (nonatomic, retain) NSTextField * hiScoresName;
 
 @property (nonatomic, retain) Mines_Engine * engine;
 @property (nonatomic, retain) HiScoresCtrllr * hiScoresCtrllr;
@@ -46,5 +50,6 @@
 - (IBAction)showHighScores:(id)sender;
 - (IBAction)performClick:(NSPoint)location
 			  rightClick:(BOOL)rightClick;
+- (IBAction)acceptHiScore:(id)sender;
 
 @end

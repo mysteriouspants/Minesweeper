@@ -16,6 +16,8 @@
 @synthesize timer;
 @synthesize eventMask;
 @synthesize textField;
+@synthesize hiScoreWindow;
+@synthesize hiScoresName;
 
 @synthesize engine;
 @synthesize hiScoresCtrllr;
@@ -33,6 +35,10 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	NSLog(@"mines did finish launching");
+}
+
+- (IBAction)acceptHiScore:(id)sender {
+	[NSApp endSheet:self.hiScoreWindow];
 }
 
 - (void)performClick:(NSPoint)location
