@@ -7,11 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "HiScore.h"
 
-
-@interface HiScoresCtrllr : NSWindowController <NSWindowDelegate> {
-
+@interface HiScoresCtrllr : NSWindowController < NSWindowDelegate, NSTableViewDataSource > {
+	IBOutlet id scoresTable;
+	NSArray * hiScores;
 }
+
+@property (nonatomic, retain) IBOutlet id scoresTable;
+@property (nonatomic, retain) NSArray * hiScores;
 
 - (void)scoresDidChange;
 

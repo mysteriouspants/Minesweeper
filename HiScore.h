@@ -9,13 +9,16 @@
 #import <CoreData/CoreData.h>
 
 
-@interface HiScore :  NSManagedObject  
+@interface HiScore :  NSManagedObject
 {
 }
 
 @property (nonatomic, retain) NSDate * gameStartDate;
 @property (nonatomic, retain) NSDate * gameStopDate;
 @property (nonatomic, retain) NSString * playerName;
+
+- (NSTimeInterval)gameLength;
+- (NSString*)prettyPrintGameLength;
 
 @end
 
