@@ -52,7 +52,8 @@
 - (IBAction)showHighScores:(id)sender {
 	if(self.hiScoresCtrllr == nil)
 		hiScoresCtrllr = [[HiScoresCtrllr alloc] initWithWindowNibName:@"HiScore"];
-	[hiScoresCtrllr window];
+	[hiScoresCtrllr showWindow:self];
+	[[hiScoresCtrllr window] makeKeyWindow];
 }
 
 /**

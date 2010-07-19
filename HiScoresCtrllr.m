@@ -42,7 +42,7 @@
 }
 
 - (void)windowWillClose:(NSNotification *)notification {
-	[self release];
+	//[self release];
 }
 			 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)aTableView {
