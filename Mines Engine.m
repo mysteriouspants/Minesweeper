@@ -85,6 +85,8 @@ CGFloat minesMax = 0.2000f;
 					}
 				} 
 			putImageAtTile(EXPLODED_BOMB, row, col);
+		} else if(HAS_MINE(mines,row,col)&&(HAS_FLAG(mines,row,col)||HAS_QMARK(mines,row,col))) {
+			// do nothing
 		} else if(!HAS_CLICKED(mines,row,col)) {
 			// find how many mines are adjacent
 			mines->minefield[row][col] += CLICKED;
