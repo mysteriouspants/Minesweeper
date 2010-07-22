@@ -34,8 +34,10 @@ CGFloat minesMax = 0.2000f;
 - (void)receiveClickAtRow:(NSInteger)row
 					  col:(NSInteger)col
 			   rightClick:(BOOL)rightClick {
-	if(blockedByScore==YES)
+	if(blockedByScore==YES) {
+		NSLog(@"Blocked by score");
 		return;
+	}
 	NSAutoreleasePool * pool0 = [[NSAutoreleasePool alloc] init];
 	if(self.gameStart == nil) {		// game has not yet started
 		// start the timer
@@ -157,7 +159,9 @@ CGFloat minesMax = 0.2000f;
 		NSLog(@"Context now has %@", [ctxt registeredObjects]);
 	}
 	// broadcast that the scores have changed, just something unique and not in use by the system
-	[[NSNotificationCenter defaultCenter] postNotificationName:@"FSDEV Mines high scores did change"];
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"FSDEV Mines high scores did change"
+														object:self
+													  userInfo:nil];
 	self.gameStart = nil; // will cause the game to restart if a tile is clicked
 	self.blockedByScore = NO;
 	[self.dg.textField setStringValue:@"You win! Click to restart."];

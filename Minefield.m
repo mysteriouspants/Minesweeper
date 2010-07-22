@@ -134,7 +134,7 @@ void logMinefield(s_minefield *mines) {
 			else
 				[toLog appendString:@" "];
 			
-			[toLog appendString:@" "];
+			[toLog appendString:@" | "];
 		}
 		[toLog appendString:@"\n"];
 	}
