@@ -19,6 +19,7 @@ CGFloat minesMax = 0.2000f;
 
 @synthesize dg;
 @synthesize gameStart;
+@synthesize gameStop;
 @synthesize gameTimer;
 @synthesize mines;
 @synthesize blockedByScore;
@@ -128,6 +129,18 @@ CGFloat minesMax = 0.2000f;
 		// the game is won
 		[self.gameTimer invalidate];
 		self.blockedByScore = YES;
+		self.gameStop = [NSDate date];
+		for(NSInteger j,i=0; i<MINES_ROWS; ++i)
+			for(j=0; j<MINES_COLS; ++j) {
+				if(!HAS_MINE(mines,i,j)&&!HAS_CLICKED(mines,i,j)) {
+					mines->minefield[i][j] += CLICKED;
+					NSInteger num_mines = adjacentMines(mines,i,j);
+					NSLog(@"adjacent mines: %ld",num_mines);
+					putImageAtTile(NUM_0+num_mines,
+								   i,
+								   j);
+				}
+			} 
 		// start the name dialog
 		[NSApp beginSheet:self.dg.hiScoreWindow
 		   modalForWindow:self.dg.window
@@ -150,8 +163,7 @@ CGFloat minesMax = 0.2000f;
 	HiScore *score = [NSEntityDescription insertNewObjectForEntityForName:@"HiScore"
 												   inManagedObjectContext:ctxt];
 	score.gameStartDate = self.gameStart;
-	score.gameStopDate = [NSDate date];
-	// TODO: show a dialog asking for the player's name
+	score.gameStopDate = self.gameStop;
 	score.playerName = [self.dg.hiScoresName stringValue];
 	NSError *error;
 	if(![ctxt save:&error]) {

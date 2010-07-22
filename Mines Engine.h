@@ -17,6 +17,7 @@
 @interface Mines_Engine : NSObject {
 	__weak mines_AppDelegate * dg;
 	NSDate * gameStart;
+	NSDate * gameStop;
 	NSTimer * gameTimer;
 	s_minefield * mines;
 	BOOL blockedByScore;
@@ -24,6 +25,7 @@
 
 @property(readwrite,assign) mines_AppDelegate * dg;
 @property(readwrite,retain) NSDate * gameStart;
+@property(readwrite,retain) NSDate * gameStop;
 @property(readwrite,retain) NSTimer * gameTimer;
 @property(readwrite,assign) s_minefield * mines;
 @property(readwrite,assign) BOOL blockedByScore;
