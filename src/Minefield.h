@@ -40,6 +40,8 @@ s_minefield* generateMinefield(CGFloat minesMin,
 							   CGFloat minesMax);
 BOOL winConditions(s_minefield *mines);
 void logMinefield(s_minefield *mines);
+NSInteger countMines(s_minefield *minefield);
+NSInteger countFlags(s_minefield *minefield);
 
 #define MINES_ROWS 8
 #define MINES_COLS 8

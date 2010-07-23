@@ -65,6 +65,8 @@ CGFloat minesMax = 0.2000f;
 			else
 				NSLog(@"Minefield had a mine on starting position!");
 		} while ( 0x0000 == 0x0000 ) ;
+		// set the label for number of mines - number of flags
+		[[self.dg textField] setStringValue:[NSString stringWithFormat:@"%ld",(countMines(mines)-countFlags(mines))]];
 		// continue on to normal program flow
 		
 	}
@@ -122,7 +124,8 @@ CGFloat minesMax = 0.2000f;
 			} else {
 				mines->minefield[row][col] += FLAGGED;
 				putImageAtTile(FLAG_TILE, row, col);
-			}			
+			}
+			[[self.dg textField] setStringValue:[NSString stringWithFormat:@"%ld",(countMines(mines)-countFlags(mines))]];
 		}
 	}
 	if(winConditions(mines)) {
@@ -130,6 +133,7 @@ CGFloat minesMax = 0.2000f;
 		[self.gameTimer invalidate];
 		self.blockedByScore = YES;
 		self.gameStop = [NSDate date];
+		[[self.dg textField] setStringValue:[NSString stringWithFormat:@"%ld",(countMines(mines)-countFlags(mines))]];
 		for(NSInteger j,i=0; i<MINES_ROWS; ++i)
 			for(j=0; j<MINES_COLS; ++j) {
 				if(!HAS_MINE(mines,i,j)&&!HAS_CLICKED(mines,i,j)) {

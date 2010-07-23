@@ -141,3 +141,21 @@ void logMinefield(s_minefield *mines) {
 	NSLog(@"%@",toLog);
 	[pool0 release];
 }
+
+NSInteger countMines(s_minefield *minefield) {
+	NSInteger mines=0;
+	for(NSInteger row=0; row < minefield->x; ++row)
+		for(NSInteger col=0; col < minefield->y; ++col)
+			if(HAS_MINE(minefield,row,col))
+				++mines;
+	return mines;
+}
+
+NSInteger countFlags(s_minefield *minefield) {
+	NSInteger flags=0;
+	for(NSInteger row=0; row < minefield->x; ++row)
+		for(NSInteger col=0; col < minefield->y; ++col)
+			if(HAS_FLAG(minefield,row,col))
+				++flags;
+	return flags;
+}
