@@ -20,6 +20,7 @@
 		DA0F4A0A11D1E40E00EBA200 /* Resources.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA0F4A0911D1E40E00EBA200 /* Resources.plist */; };
 		DA0F4ADE11D2C26C00EBA200 /* Mines Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0F4ADD11D2C26C00EBA200 /* Mines Engine.m */; };
 		DA0F4D1411D4600E00EBA200 /* InputEvtMask.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0F4D1311D4600E00EBA200 /* InputEvtMask.m */; };
+		DAC4E0AA11F9F5B800C6DE8F /* FSZip.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC4E0A911F9F5B800C6DE8F /* FSZip.m */; };
 		DAE3EDF811DBBDEA0034471C /* Minefield.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE3EDF711DBBDEA0034471C /* Minefield.m */; };
 		DAE3EE7711DBFE210034471C /* Minefield.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE3EDF711DBBDEA0034471C /* Minefield.m */; };
 		DAE3EE7A11DBFE340034471C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -100,6 +101,8 @@
 		DA0F4D5C11D4735A00EBA200 /* number 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "number 0.png"; sourceTree = "<group>"; };
 		DA251F8311F91788003DBEB9 /* mines-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "mines-Info.plist"; path = "Resources/mines-Info.plist"; sourceTree = "<group>"; };
 		DA673ABF11CE147E0072B5FE /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
+		DAC4E0A811F9F5B800C6DE8F /* FSZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSZip.h; sourceTree = "<group>"; };
+		DAC4E0A911F9F5B800C6DE8F /* FSZip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSZip.m; sourceTree = "<group>"; };
 		DAE3EDF611DBBDEA0034471C /* Minefield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Minefield.h; sourceTree = "<group>"; };
 		DAE3EDF711DBBDEA0034471C /* Minefield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Minefield.m; sourceTree = "<group>"; };
 		DAE3EE7111DBFE020034471C /* mines-test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mines-test.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +156,8 @@
 				DAE3EEC711ED02670034471C /* HiScore.m */,
 				DAE3EECD11ED05410034471C /* HiScoresCtrllr.h */,
 				DAE3EECE11ED05410034471C /* HiScoresCtrllr.m */,
+				DAC4E0A811F9F5B800C6DE8F /* FSZip.h */,
+				DAC4E0A911F9F5B800C6DE8F /* FSZip.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -440,6 +445,7 @@
 				DAE3EDF811DBBDEA0034471C /* Minefield.m in Sources */,
 				DAE3EEC911ED02670034471C /* HiScore.m in Sources */,
 				DAE3EECF11ED05410034471C /* HiScoresCtrllr.m in Sources */,
+				DAC4E0AA11F9F5B800C6DE8F /* FSZip.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
