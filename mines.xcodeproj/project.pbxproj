@@ -460,8 +460,8 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = mines_Prefix.pch;
-				INFOPLIST_FILE = "mines-Info.plist";
+				GCC_PREFIX_HEADER = src/mines_Prefix.pch;
+				INFOPLIST_FILE = "Resources/mines-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = mines;
 				WRAPPER_EXTENSION = app;
@@ -475,8 +475,8 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = mines_Prefix.pch;
-				INFOPLIST_FILE = "mines-Info.plist";
+				GCC_PREFIX_HEADER = src/mines_Prefix.pch;
+				INFOPLIST_FILE = "Resources/mines-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = mines;
 				WRAPPER_EXTENSION = app;
