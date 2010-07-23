@@ -14,22 +14,6 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		DA0420D111F2EA28000892BB /* McSpider AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = DA0420C011F2EA28000892BB /* McSpider AppIcon.icns */; };
-		DA0420D211F2EA28000892BB /* blank tile.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420C111F2EA28000892BB /* blank tile.png */; };
-		DA0420D311F2EA28000892BB /* bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420C211F2EA28000892BB /* bomb.png */; };
-		DA0420D411F2EA28000892BB /* exploding bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420C311F2EA28000892BB /* exploding bomb.png */; };
-		DA0420D511F2EA28000892BB /* flag bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420C411F2EA28000892BB /* flag bomb.png */; };
-		DA0420D611F2EA28000892BB /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420C511F2EA28000892BB /* flag.png */; };
-		DA0420D711F2EA28000892BB /* number 0.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420C611F2EA28000892BB /* number 0.png */; };
-		DA0420D811F2EA28000892BB /* number 1.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420C711F2EA28000892BB /* number 1.png */; };
-		DA0420D911F2EA28000892BB /* number 2.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420C811F2EA28000892BB /* number 2.png */; };
-		DA0420DA11F2EA28000892BB /* number 3.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420C911F2EA28000892BB /* number 3.png */; };
-		DA0420DB11F2EA28000892BB /* number 4.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420CA11F2EA28000892BB /* number 4.png */; };
-		DA0420DC11F2EA28000892BB /* number 5.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420CB11F2EA28000892BB /* number 5.png */; };
-		DA0420DD11F2EA28000892BB /* number 6.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420CC11F2EA28000892BB /* number 6.png */; };
-		DA0420DE11F2EA28000892BB /* number 7.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420CD11F2EA28000892BB /* number 7.png */; };
-		DA0420DF11F2EA28000892BB /* number 8.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420CE11F2EA28000892BB /* number 8.png */; };
-		DA0420E011F2EA28000892BB /* qmark bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420CF11F2EA28000892BB /* qmark bomb.png */; };
-		DA0420E111F2EA28000892BB /* question mark.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420D011F2EA28000892BB /* question mark.png */; };
 		DA0CB95911F974E40086C8BF /* libzip.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0CB95811F974E40086C8BF /* libzip.1.0.0.dylib */; };
 		DA0CB95A11F974E80086C8BF /* libzip.1.0.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DA0CB95811F974E40086C8BF /* libzip.1.0.0.dylib */; };
 		DA0F4A0811D1E3CE00EBA200 /* Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0F4A0711D1E3CE00EBA200 /* Resources.m */; };
@@ -226,8 +210,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DA0420BE11F2EA0C000892BB /* McSpider */,
-				DA0F4BB611D2DAD300EBA200 /* programmer_art */,
+				DA0CB97011F97A290086C8BF /* gfx */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				2F7446970DB6B7EA00F9684A /* MainMenu.xib */,
 				DA0F4A0911D1E40E00EBA200 /* Resources.plist */,
@@ -277,7 +260,16 @@
 				DA0420D011F2EA28000892BB /* question mark.png */,
 			);
 			name = McSpider;
-			path = Resources/McSpider;
+			path = Resources/gfx/McSpider;
+			sourceTree = "<group>";
+		};
+		DA0CB97011F97A290086C8BF /* gfx */ = {
+			isa = PBXGroup;
+			children = (
+				DA0420BE11F2EA0C000892BB /* McSpider */,
+				DA0F4BB611D2DAD300EBA200 /* programmer_art */,
+			);
+			name = gfx;
 			sourceTree = "<group>";
 		};
 		DA0F4BB611D2DAD300EBA200 /* programmer_art */ = {
@@ -302,7 +294,7 @@
 				DA673ABF11CE147E0072B5FE /* flag.png */,
 			);
 			name = programmer_art;
-			path = Resources/programmer_art;
+			path = Resources/gfx/programmer_art;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,10 +304,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26FC0A840875C7B200E6366F /* Build configuration list for PBXNativeTarget "mines" */;
 			buildPhases = (
+				DA0CB95E11F9763E0086C8BF /* Zip Resources */,
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
 				DA0CB95611F974220086C8BF /* Copy Frameworks */,
+				DA0CB95C11F975CC0086C8BF /* Change libzip Path */,
 			);
 			buildRules = (
 			);
@@ -376,22 +370,6 @@
 				DA0F4A0A11D1E40E00EBA200 /* Resources.plist in Resources */,
 				DAE3EECB11ED033A0034471C /* HiScore.xib in Resources */,
 				DA0420D111F2EA28000892BB /* McSpider AppIcon.icns in Resources */,
-				DA0420D211F2EA28000892BB /* blank tile.png in Resources */,
-				DA0420D311F2EA28000892BB /* bomb.png in Resources */,
-				DA0420D411F2EA28000892BB /* exploding bomb.png in Resources */,
-				DA0420D511F2EA28000892BB /* flag bomb.png in Resources */,
-				DA0420D611F2EA28000892BB /* flag.png in Resources */,
-				DA0420D711F2EA28000892BB /* number 0.png in Resources */,
-				DA0420D811F2EA28000892BB /* number 1.png in Resources */,
-				DA0420D911F2EA28000892BB /* number 2.png in Resources */,
-				DA0420DA11F2EA28000892BB /* number 3.png in Resources */,
-				DA0420DB11F2EA28000892BB /* number 4.png in Resources */,
-				DA0420DC11F2EA28000892BB /* number 5.png in Resources */,
-				DA0420DD11F2EA28000892BB /* number 6.png in Resources */,
-				DA0420DE11F2EA28000892BB /* number 7.png in Resources */,
-				DA0420DF11F2EA28000892BB /* number 8.png in Resources */,
-				DA0420E011F2EA28000892BB /* qmark bomb.png in Resources */,
-				DA0420E111F2EA28000892BB /* question mark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +383,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		DA0CB95C11F975CC0086C8BF /* Change libzip Path */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Change libzip Path";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ABS_PATH=\"/usr/local/lib/libzip1.0.0.dylib\"\nREL_PATH=\"@executable_path/../Frameworks/libzip1.0.0.dylib\"\n\ninstall_name_tool -change $ABS_PATH $REL_PATH $TARGET_BUILD_DIR/$EXECUTABLE_PATH";
+		};
+		DA0CB95E11F9763E0086C8BF /* Zip Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Zip Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "zipfiledir=${TARGET_BUILD_DIR}/mines.app/Contents/Resources\nzipfile=${zipfiledir}/gfx.zip\nmkdir -p ${zipfiledir}\nsourcedir=${PROJECT_DIR}/Resources/gfx\necho \"Zipping ${sourcedir} into ${zipfile}\"\nrm -f ${zipfile}\ncd ${sourcedir}\nzip -r  ${zipfile} * -x \\*.xcf";
+		};
 		DAE3EE6F11DBFE020034471C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
