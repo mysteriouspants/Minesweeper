@@ -7,72 +7,72 @@
 		<key>mcspider_art</key>
 		<dict>
 			<key>bomb</key>
-			<string>gfx/McSpider/bomb.png</string>
+			<string>McSpider/bomb.png</string>
 			<key>number 0</key>
-			<string>gfx/McSpider/number 0.png</string>
+			<string>McSpider/number 0.png</string>
 			<key>number 1</key>
-			<string>gfx/McSpider/number 1.png</string>
+			<string>McSpider/number 1.png</string>
 			<key>number 2</key>
-			<string>gfx/McSpider/number 2.png</string>
+			<string>McSpider/number 2.png</string>
 			<key>number 3</key>
-			<string>gfx/McSpider/number 3.png</string>
+			<string>McSpider/number 3.png</string>
 			<key>number 4</key>
-			<string>gfx/McSpider/number 4.png</string>
+			<string>McSpider/number 4.png</string>
 			<key>number 5</key>
-			<string>gfx/McSpider/number 5.png</string>
+			<string>McSpider/number 5.png</string>
 			<key>number 6</key>
-			<string>gfx/McSpider/number 6.png</string>
+			<string>McSpider/number 6.png</string>
 			<key>number 7</key>
-			<string>gfx/McSpider/number 7.png</string>
+			<string>McSpider/number 7.png</string>
 			<key>number 8</key>
-			<string>gfx/McSpider/number 8.png</string>
+			<string>McSpider/number 8.png</string>
 			<key>question mark</key>
-			<string>gfx/McSpider/question mark.png</string>
+			<string>McSpider/question mark.png</string>
 			<key>flag</key>
-			<string>gfx/McSpider/flag.png</string>
+			<string>McSpider/flag.png</string>
 			<key>blank tile</key>
-			<string>gfx/McSpider/blank tile.png</string>
+			<string>McSpider/blank tile.png</string>
 			<key>exploded bomb</key>
-			<string>gfx/McSpider/exploding bomb.png</string>
+			<string>McSpider/exploding bomb.png</string>
 			<key>bomb flag</key>
-			<string>gfx/McSpider/flag bomb.png</string>
+			<string>McSpider/flag bomb.png</string>
 			<key>bomb qmark</key>
-			<string>gfx/McSpider/qmark bomb.png</string>
+			<string>McSpider/qmark bomb.png</string>
 		</dict>
 		<key>programmer_art</key>
 		<dict>
 			<key>bomb</key>
-			<string>gfx/programmer_art/bomb.png</string>
+			<string>programmer_art/bomb.png</string>
 			<key>number 0</key>
-			<string>gfx/programmer_art/number 0.png</string>
+			<string>programmer_art/number 0.png</string>
 			<key>number 1</key>
-			<string>gfx/programmer_art/number 1.png</string>
+			<string>programmer_art/number 1.png</string>
 			<key>number 2</key>
-			<string>gfx/programmer_art/number 2.png</string>
+			<string>programmer_art/number 2.png</string>
 			<key>number 3</key>
-			<string>gfx/programmer_art/number 3.png</string>
+			<string>programmer_art/number 3.png</string>
 			<key>number 4</key>
-			<string>gfx/programmer_art/number 4.png</string>
+			<string>programmer_art/number 4.png</string>
 			<key>number 5</key>
-			<string>gfx/programmer_art/number 5.png</string>
+			<string>programmer_art/number 5.png</string>
 			<key>number 6</key>
-			<string>gfx/programmer_art/number 6.png</string>
+			<string>programmer_art/number 6.png</string>
 			<key>number 7</key>
-			<string>gfx/programmer_art/number 7.png</string>
+			<string>programmer_art/number 7.png</string>
 			<key>number 8</key>
-			<string>gfx/programmer_art/number 8.png</string>
+			<string>programmer_art/number 8.png</string>
 			<key>question mark</key>
-			<string>gfx/programmer_art/question mark.png</string>
+			<string>programmer_art/question mark.png</string>
 			<key>flag</key>
-			<string>gfx/programmer_art/flag.png</string>
+			<string>programmer_art/flag.png</string>
 			<key>blank tile</key>
-			<string>gfx/programmer_art/blank tile.png</string>
+			<string>programmer_art/blank tile.png</string>
 			<key>exploded bomb</key>
-			<string>gfx/programmer_art/exploding bomb.png</string>
+			<string>programmer_art/exploding bomb.png</string>
 			<key>bomb flag</key>
-			<string>gfx/programmer_art/flag bomb.png</string>
+			<string>programmer_art/flag bomb.png</string>
 			<key>bomb qmark</key>
-			<string>gfx/programmer_art/qmark bomb.png</string>
+			<string>programmer_art/qmark bomb.png</string>
 		</dict>
 	</dict>
 	<key>Image Enum Mappings</key>
