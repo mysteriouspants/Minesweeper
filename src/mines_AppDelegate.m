@@ -49,7 +49,7 @@
 					column:&col
 				  forPoint:location];
 	row=abs(7l-row);
-	NSLog(@"Click translates to r:%d c:%d",row,col);
+	NSLog(@"Click translates to r:%ld c:%ld",row,col);
 	[engine receiveClickAtRow:row
 						  col:col
 				   rightClick:rightClick];
@@ -105,7 +105,6 @@
     NSManagedObjectModel *mom = [self managedObjectModel];
     if (!mom) {
         NSAssert(NO, @"Managed object model is nil");
-        NSLog(@"%@:%s No model to generate a store from", [self class], _cmd);
         return nil;
     }
 
@@ -181,7 +180,7 @@
     NSError *error = nil;
     
     if (![[self managedObjectContext] commitEditing]) {
-        NSLog(@"%@:%s unable to commit editing before saving", [self class], _cmd);
+        NSLog(@"unable to commit editing before saving");
     }
 
     if (![[self managedObjectContext] save:&error]) {
@@ -201,7 +200,7 @@
     if (!managedObjectContext) return NSTerminateNow;
 
     if (![managedObjectContext commitEditing]) {
-        NSLog(@"%@:%s unable to commit editing to terminate", [self class], _cmd);
+        NSLog(@"unable to commit editing to terminate");
         return NSTerminateCancel;
     }
 
