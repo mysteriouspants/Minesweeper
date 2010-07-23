@@ -17,7 +17,7 @@ NSDictionary * __resources;
 NSDictionary * __current_image_set;
 NSDictionary * __image_enum_map;
 NSString * __current_image_set_name;
-struct zip * __gfx;
+FSZip * __gfx;
 
 __weak mines_AppDelegate * __appDg;
 
@@ -51,13 +51,17 @@ BOOL __resources_init() {
 	}
 	__image_enum_map = [[NSDictionary dictionaryWithDictionary:d] retain];
 	
-	int error;
-	__gfx = zip_open([[NSString stringWithFormat:@"%@/gfx.zip",[[NSBundle mainBundle] resourcePath]] UTF8String],0,&error);
-	if(error!=0) {
+	
+	__gfx = [[FSZip alloc] initWithFileName:[NSString stringWithFormat:@"%@/gfx.zip",[[NSBundle mainBundle] resourcePath]]];
+	NSLog(@"FSZip sees %d files.",[__gfx files]);
+	NSLog(@"FSZip sees: %@",[__gfx containedFiles]);
+	
+	if(__gfx==nil) {
 		NSLog(@"Cannot open gfx archive!");
 		__res_init = FALSE;
 		return __res_init;
 	}
+	
 	[pool0 release];
 	__res_init = TRUE;
 	return __res_init;
@@ -77,50 +81,16 @@ bool putImageAtTile(const IMAGE image_id, const NSInteger x, const NSInteger y) 
 	return TRUE;
 }
 // set to false to emit information about images
-#define RESOURCE_PROBLEMS FALSE
 NSImage * getImage(const IMAGE image_id) {
 	if(!__resources_init())
 		return nil;
 	NSAutoreleasePool * pool0 = [[NSAutoreleasePool alloc] init];
-	if(RESOURCE_PROBLEMS) {
-		NSLog(@"Getting Image:");
-		NSLog(@"    Image ID:   %d", image_id);
-	}
 	NSString * image_name = [__image_enum_map objectForKey:
 							 [NSNumber numberWithInteger:image_id]];
-	if(RESOURCE_PROBLEMS)
-		NSLog(@"    Image Name: %@", image_name);
 	NSString * image_file = [__current_image_set objectForKey:image_name];
-	if(RESOURCE_PROBLEMS)
-		NSLog(@"    Image File: %@", image_file);
-	// grab the zip_file* from zip_fopen
-	struct zip_file * image = zip_fopen(__gfx,[image_file UTF8String], ZIP_FL_COMPRESSED);
-	if(image==NULL) {
-		NSLog(@"Unable to load %@",image_file);
-		return nil;
-	}
-	// int zip_fread(struct zip_file *file, void *buf, int nbytes)
-	NSMutableData * imageData = [[NSMutableData alloc] init];
-	void * stuff = (void*)malloc(sizeof(void)*1024);
-	int read;
-	do {
-		read = zip_fread(image, stuff, sizeof(void)*1024);
-		[imageData appendBytes:stuff
-						length:read];
-	} while (read>0);
-	free(stuff);
-	
-	NSString * path = [[NSString alloc] initWithFormat:@"%@/%@",
-					   [[NSBundle mainBundle] resourcePath],
-					   image_file];
-	NSImage * i = [[NSImage alloc] initWithData:imageData];
-	[path release];
+	NSImage * i = [[NSImage alloc] initWithData:[__gfx dataForFile:image_file]];
+//	[image_file release];
+//	[image_name release];
 	[pool0 release];
-	if(RESOURCE_PROBLEMS)
-		if(i == nil)
-			NSLog(@"    returning nil");
-		else
-			NSLog(@"    returning image");
-	[imageData autorelease];
 	return [i autorelease];
 }

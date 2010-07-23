@@ -8,6 +8,7 @@
  */
 
 #include <zip.h>
+#import "FSZip.h"
 
 @class mines_AppDelegate;
 

@@ -500,6 +500,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
+				OTHER_CFLAGS = "-DDEBUG=1";
 				PRODUCT_NAME = mines;
 				VALID_ARCHS = "i386 x86_64";
 				WRAPPER_EXTENSION = app;
