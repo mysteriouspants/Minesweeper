@@ -41,6 +41,10 @@
 	[NSApp endSheet:self.hiScoreWindow];
 }
 
+- (void)windowWillClose:(NSNotification *)notification {
+	[NSApp terminate:self];
+}
+
 - (void)performClick:(NSPoint)location
 		  rightClick:(BOOL)rightClick {
 	NSLog(@"Received click at (%f,%f)",location.x,location.y);
