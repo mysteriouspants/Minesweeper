@@ -7,6 +7,8 @@
  *
  */
 
+#include <zip.h>
+
 @class mines_AppDelegate;
 
 typedef enum {
