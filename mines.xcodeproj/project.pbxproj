@@ -30,6 +30,8 @@
 		DA0420DF11F2EA28000892BB /* number 8.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420CE11F2EA28000892BB /* number 8.png */; };
 		DA0420E011F2EA28000892BB /* qmark bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420CF11F2EA28000892BB /* qmark bomb.png */; };
 		DA0420E111F2EA28000892BB /* question mark.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0420D011F2EA28000892BB /* question mark.png */; };
+		DA0CB95911F974E40086C8BF /* libzip.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0CB95811F974E40086C8BF /* libzip.1.0.0.dylib */; };
+		DA0CB95A11F974E80086C8BF /* libzip.1.0.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = DA0CB95811F974E40086C8BF /* libzip.1.0.0.dylib */; };
 		DA0F4A0811D1E3CE00EBA200 /* Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0F4A0711D1E3CE00EBA200 /* Resources.m */; };
 		DA0F4A0A11D1E40E00EBA200 /* Resources.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA0F4A0911D1E40E00EBA200 /* Resources.plist */; };
 		DA0F4ADE11D2C26C00EBA200 /* Mines Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0F4ADD11D2C26C00EBA200 /* Mines Engine.m */; };
@@ -43,6 +45,20 @@
 		DAE3EECB11ED033A0034471C /* HiScore.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAE3EECA11ED033A0034471C /* HiScore.xib */; };
 		DAE3EECF11ED05410034471C /* HiScoresCtrllr.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE3EECE11ED05410034471C /* HiScoresCtrllr.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DA0CB95611F974220086C8BF /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DA0CB95A11F974E80086C8BF /* libzip.1.0.0.dylib in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -74,6 +90,7 @@
 		DA0420CE11F2EA28000892BB /* number 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "number 8.png"; sourceTree = "<group>"; };
 		DA0420CF11F2EA28000892BB /* qmark bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qmark bomb.png"; sourceTree = "<group>"; };
 		DA0420D011F2EA28000892BB /* question mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "question mark.png"; sourceTree = "<group>"; };
+		DA0CB95811F974E40086C8BF /* libzip.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libzip.1.0.0.dylib; sourceTree = "<group>"; };
 		DA0F49EC11D1E09000EBA200 /* bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bomb.png; sourceTree = "<group>"; };
 		DA0F49ED11D1E09000EBA200 /* number 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "number 1.png"; sourceTree = "<group>"; };
 		DA0F49EE11D1E09000EBA200 /* number 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "number 2.png"; sourceTree = "<group>"; };
@@ -118,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				DA0CB95911F974E40086C8BF /* libzip.1.0.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +176,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA0CB95811F974E40086C8BF /* libzip.1.0.0.dylib */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -296,6 +315,7 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				DA0CB95611F974220086C8BF /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -463,6 +483,10 @@
 				GCC_PREFIX_HEADER = src/mines_Prefix.pch;
 				INFOPLIST_FILE = "Resources/mines-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = mines;
 				WRAPPER_EXTENSION = app;
 			};
@@ -478,6 +502,10 @@
 				GCC_PREFIX_HEADER = src/mines_Prefix.pch;
 				INFOPLIST_FILE = "Resources/mines-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = mines;
 				WRAPPER_EXTENSION = app;
 			};
