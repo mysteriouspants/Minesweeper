@@ -16,6 +16,7 @@ BOOL __res_init = FALSE;
 NSDictionary * __resources;
 NSDictionary * __current_image_set;
 NSDictionary * __image_enum_map;
+NSMutableDictionary * __image_cache;
 NSString * __current_image_set_name;
 FSZip * __gfx;
 
@@ -61,6 +62,8 @@ BOOL __resources_init() {
 		__res_init = FALSE;
 		return __res_init;
 	}
+    
+    __image_cache = [[NSMutableDictionary alloc] init];
 	
 	[pool0 release];
 	__res_init = TRUE;
@@ -88,9 +91,14 @@ NSImage * getImage(const IMAGE image_id) {
 	NSString * image_name = [__image_enum_map objectForKey:
 							 [NSNumber numberWithInteger:image_id]];
 	NSString * image_file = [__current_image_set objectForKey:image_name];
-	NSImage * i = [[NSImage alloc] initWithData:[__gfx dataForFile:image_file]];
+    NSImage * i = [__image_cache objectForKey:image_file];
+    if(i==nil) {
+        i = [[NSImage alloc] initWithData:[__gfx dataForFile:image_file]];
+        [__image_cache setObject:[i autorelease]
+                          forKey:image_file];
+    }
 //	[image_file release];
 //	[image_name release];
 	[pool0 release];
-	return [i autorelease];
+	return i;
 }
