@@ -11,7 +11,7 @@
 #import "Minefield.h"
 
 @interface TestMinefield : SenTestCase {
-	s_minefield * mines;  // "Minefield!  We're in a minefield!" -- Homeworld: Cataclysm
+    s_minefield * mines;  // "Minefield!  We're in a minefield!" -- Homeworld: Cataclysm
 }
 
 - (void)setUp;

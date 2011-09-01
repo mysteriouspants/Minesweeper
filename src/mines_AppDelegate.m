@@ -23,47 +23,47 @@
 @synthesize hiScoresCtrllr;
 
 - (void)applicationWillFinishLaunching:(NSNotification *)aNotification {
-	NSLog(@"mines will finish launching");
-	[self.textField setStringValue:@"Click on a Tile to Start!"];
-	self.engine = [[Mines_Engine alloc] initWithApp:self];
-	injectAppDelegate(self);
-	[self.eventMask setDg:self];
-	for(size_t x = 0; x < 8; ++x)
-		for(size_t y = 0; y < 8; ++y)
-			putImageAtTile(BLANK_TILE, x, y);
+    NSLog(@"mines will finish launching");
+    [self.textField setStringValue:@"Click on a Tile to Start!"];
+    self.engine = [[Mines_Engine alloc] initWithApp:self];
+    injectAppDelegate(self);
+    [self.eventMask setDg:self];
+    for(size_t x = 0; x < 8; ++x)
+        for(size_t y = 0; y < 8; ++y)
+            putImageAtTile(BLANK_TILE, x, y);
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	NSLog(@"mines did finish launching");
+    NSLog(@"mines did finish launching");
 }
 
 - (IBAction)acceptHiScore:(id)sender {
-	[NSApp endSheet:self.hiScoreWindow];
+    [NSApp endSheet:self.hiScoreWindow];
 }
 
 - (void)windowWillClose:(NSNotification *)notification {
-	[NSApp terminate:self];
+    [NSApp terminate:self];
 }
 
 - (void)performClick:(NSPoint)location
-		  rightClick:(BOOL)rightClick {
-	NSLog(@"Received click at (%f,%f)",location.x,location.y);
-	NSInteger row,col;
-	[self.minefield getRow:&row
-					column:&col
-				  forPoint:location];
-	row=abs(7l-row);
-	NSLog(@"Click translates to r:%ld c:%ld",row,col);
-	[engine receiveClickAtRow:row
-						  col:col
-				   rightClick:rightClick];
+          rightClick:(BOOL)rightClick {
+    NSLog(@"Received click at (%f,%f)",location.x,location.y);
+    NSInteger row,col;
+    [self.minefield getRow:&row
+                    column:&col
+                  forPoint:location];
+    row=abs(7l-row);
+    NSLog(@"Click translates to r:%ld c:%ld",row,col);
+    [engine receiveClickAtRow:row
+                          col:col
+                   rightClick:rightClick];
 }
 
 - (IBAction)showHighScores:(id)sender {
-	if(self.hiScoresCtrllr == nil)
-		hiScoresCtrllr = [[HiScoresCtrllr alloc] initWithWindowNibName:@"HiScore"];
-	[hiScoresCtrllr showWindow:self];
-	[[hiScoresCtrllr window] makeKeyWindow];
+    if(self.hiScoresCtrllr == nil)
+        hiScoresCtrllr = [[HiScoresCtrllr alloc] initWithWindowNibName:@"HiScore"];
+    [hiScoresCtrllr showWindow:self];
+    [[hiScoresCtrllr window] makeKeyWindow];
 }
 
 /**
@@ -89,7 +89,7 @@
 - (NSManagedObjectModel *)managedObjectModel {
 
     if (managedObjectModel) return managedObjectModel;
-	
+    
     managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];    
     return managedObjectModel;
 }
@@ -117,11 +117,11 @@
     NSError *error = nil;
     
     if ( ![fileManager fileExistsAtPath:applicationSupportDirectory isDirectory:NULL] ) {
-		if (![fileManager createDirectoryAtPath:applicationSupportDirectory withIntermediateDirectories:NO attributes:nil error:&error]) {
+        if (![fileManager createDirectoryAtPath:applicationSupportDirectory withIntermediateDirectories:NO attributes:nil error:&error]) {
             NSAssert(NO, ([NSString stringWithFormat:@"Failed to create App Support directory %@ : %@", applicationSupportDirectory,error]));
             NSLog(@"Error creating application support directory at %@ : %@",applicationSupportDirectory,error);
             return nil;
-		}
+        }
     }
     
     NSURL *url = [NSURL fileURLWithPath: [applicationSupportDirectory stringByAppendingPathComponent: @"storedata"]];
@@ -253,12 +253,12 @@
 - (void)dealloc {
 
     [window release];
-	if(self.hiScoresCtrllr != nil)
-		[hiScoresCtrllr release];
+    if(self.hiScoresCtrllr != nil)
+        [hiScoresCtrllr release];
     [managedObjectContext release];
     [persistentStoreCoordinator release];
     [managedObjectModel release];
-	
+    
     [super dealloc];
 }
 

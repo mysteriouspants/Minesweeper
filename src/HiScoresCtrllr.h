@@ -10,8 +10,8 @@
 #import "HiScore.h"
 
 @interface HiScoresCtrllr : NSWindowController < NSWindowDelegate, NSTableViewDataSource > {
-	IBOutlet id scoresTable;
-	NSArray * hiScores;
+    IBOutlet id scoresTable;
+    NSArray * hiScores;
 }
 
 @property (nonatomic, retain) IBOutlet id scoresTable;

@@ -18,12 +18,12 @@
     IBOutlet id minefield;
     IBOutlet id timer;
     IBOutlet id eventMask;
-	IBOutlet NSTextField * textField;
-	IBOutlet NSWindow * hiScoreWindow;
-	IBOutlet NSTextField * hiScoresName;
-	
-	Mines_Engine * engine;
-	HiScoresCtrllr * hiScoresCtrllr;
+    IBOutlet NSTextField * textField;
+    IBOutlet NSWindow * hiScoreWindow;
+    IBOutlet NSTextField * hiScoresName;
+    
+    Mines_Engine * engine;
+    HiScoresCtrllr * hiScoresCtrllr;
     
     NSPersistentStoreCoordinator *persistentStoreCoordinator;
     NSManagedObjectModel *managedObjectModel;
@@ -49,7 +49,7 @@
 - (IBAction)saveAction:sender;
 - (IBAction)showHighScores:(id)sender;
 - (IBAction)performClick:(NSPoint)location
-			  rightClick:(BOOL)rightClick;
+              rightClick:(BOOL)rightClick;
 - (IBAction)acceptHiScore:(id)sender;
 
 @end

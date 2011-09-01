@@ -10,34 +10,34 @@
 #include <stdlib.h>
 
 typedef enum {
-	EMPTY=  0x0000, // 0000
-	CLICKED=0x0001, // 0001
-	MINED=  0x0002, // 0010
-	FLAGGED=0x0004, // 0100
-	QMARKED=0x0008  // 1000
+    EMPTY=  0x0000, // 0000
+    CLICKED=0x0001, // 0001
+    MINED=  0x0002, // 0010
+    FLAGGED=0x0004, // 0100
+    QMARKED=0x0008  // 1000
 } tileState;
 
 static const NSInteger mines_dx[8] = { -1, +0, +1, +1, +1, +0, -1, -1 };
 static const NSInteger mines_dy[8] = { +1, +1, +1, +0, -1, -1, -1, +0 };
 
 typedef struct {
-	NSInteger x;
-	NSInteger y;
-	tileState **minefield;
+    NSInteger x;
+    NSInteger y;
+    tileState **minefield;
 } s_minefield;
 
 s_minefield* MakeMinefield(NSInteger row,
-						   NSInteger col);
+                           NSInteger col);
 void freeMinefield(s_minefield *minefield);
 BOOL inBounds(s_minefield * mines,
-			  const NSInteger row,
-			  const NSInteger col);
+              const NSInteger row,
+              const NSInteger col);
 
 NSInteger adjacentMines(s_minefield *minefield,
-						const NSInteger row,
-						const NSInteger col);
+                        const NSInteger row,
+                        const NSInteger col);
 s_minefield* generateMinefield(CGFloat minesMin,
-							   CGFloat minesMax);
+                               CGFloat minesMax);
 BOOL winConditions(s_minefield *mines);
 void logMinefield(s_minefield *mines);
 NSInteger countMines(s_minefield *minefield);

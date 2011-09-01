@@ -15,12 +15,12 @@
 @class mines_AppDelegate;
 
 @interface Mines_Engine : NSObject {
-	__weak mines_AppDelegate * dg;
-	NSDate * gameStart;
-	NSDate * gameStop;
-	NSTimer * gameTimer;
-	s_minefield * mines;
-	BOOL blockedByScore;
+    __weak mines_AppDelegate * dg;
+    NSDate * gameStart;
+    NSDate * gameStop;
+    NSTimer * gameTimer;
+    s_minefield * mines;
+    BOOL blockedByScore;
 }
 
 @property(readwrite,assign) mines_AppDelegate * dg;
@@ -33,11 +33,11 @@
 - (id)initWithApp:(mines_AppDelegate *)delegate;
 
 - (void)receiveClickAtRow:(NSInteger)row
-					  col:(NSInteger)col
-			   rightClick:(BOOL)rightClick;
+                      col:(NSInteger)col
+               rightClick:(BOOL)rightClick;
 
 - (void)didEndSheet:(NSWindow *)sheet
-		 returnCode:(NSInteger)returnCode
-		contextInfo:(void *)contextInfo;	
+         returnCode:(NSInteger)returnCode
+        contextInfo:(void *)contextInfo;    
 
 @end

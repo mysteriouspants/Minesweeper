@@ -17,7 +17,7 @@
  * But NSMatrix does have a lovely way of taking NSPoints and getting a cell row/col out of it.
  */
 @interface InputEvtMask : NSView {
-	mines_AppDelegate * dg;
+    mines_AppDelegate * dg;
 }
 
 @property (nonatomic, assign) mines_AppDelegate * dg;

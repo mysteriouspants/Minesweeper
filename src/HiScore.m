@@ -16,23 +16,23 @@
 @dynamic playerName;
 
 - (NSTimeInterval)gameLength {
-	return [self.gameStopDate timeIntervalSinceDate:self.gameStartDate];
+    return [self.gameStopDate timeIntervalSinceDate:self.gameStartDate];
 }
 
 - (NSString*)prettyPrintGameLength {
-	NSTimeInterval seconds = [self.gameStopDate timeIntervalSinceDate:self.gameStartDate];
-	NSInteger minutes = ((NSInteger)((CGFloat)seconds/60.0f));
-	NSString * toPost = [NSString stringWithFormat:@"%02d M %02d S",
-						 minutes,
-						 ((NSInteger)seconds) - (minutes*60)];
-	return [toPost autorelease];
+    NSTimeInterval seconds = [self.gameStopDate timeIntervalSinceDate:self.gameStartDate];
+    NSInteger minutes = ((NSInteger)((CGFloat)seconds/60.0f));
+    NSString * toPost = [NSString stringWithFormat:@"%02d M %02d S",
+                         minutes,
+                         ((NSInteger)seconds) - (minutes*60)];
+    return [toPost autorelease];
 }
 
 - (NSString*)description {
-	return [NSString stringWithFormat:@"\"High Score\" : {\n\t\"startDate\" : \"%@\";\t\n\"stopDate\" : \"%@\"\n\t\"playerName\" : \"%@\"\n}",
-			self.gameStartDate,
-			self.gameStopDate,
-			self.playerName];
+    return [NSString stringWithFormat:@"\"High Score\" : {\n\t\"startDate\" : \"%@\";\t\n\"stopDate\" : \"%@\"\n\t\"playerName\" : \"%@\"\n}",
+            self.gameStartDate,
+            self.gameStopDate,
+            self.playerName];
 }
 
 @end

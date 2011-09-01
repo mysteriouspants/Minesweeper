@@ -26,26 +26,26 @@
 }
 
 - (void)rightMouseUp:(NSEvent *)theEvent {
-	NSPoint locationInWindow = [theEvent locationInWindow];
-	locationInWindow = NSMakePoint(locationInWindow.y, locationInWindow.x);
-	[self.dg performClick:[self convertPoint:[theEvent locationInWindow]
-									fromView:nil]
-			   rightClick:YES];
+    NSPoint locationInWindow = [theEvent locationInWindow];
+    locationInWindow = NSMakePoint(locationInWindow.y, locationInWindow.x);
+    [self.dg performClick:[self convertPoint:[theEvent locationInWindow]
+                                    fromView:nil]
+               rightClick:YES];
 }
 
 - (void)mouseDown:(NSEvent *)theEvent {
-	
+    
 }
 
 - (void)mouseUp:(NSEvent *)theEvent {
-	NSPoint locationInWindow = [theEvent locationInWindow];
-	locationInWindow = NSMakePoint(locationInWindow.y, locationInWindow.x);
-	BOOL rightClick=NO;
-	if([theEvent modifierFlags] & NSControlKeyMask)
-		rightClick = YES;
-	[self.dg performClick:[self convertPoint:[theEvent locationInWindow]
-									fromView:nil]
-			   rightClick:rightClick];
+    NSPoint locationInWindow = [theEvent locationInWindow];
+    locationInWindow = NSMakePoint(locationInWindow.y, locationInWindow.x);
+    BOOL rightClick=NO;
+    if([theEvent modifierFlags] & NSControlKeyMask)
+        rightClick = YES;
+    [self.dg performClick:[self convertPoint:[theEvent locationInWindow]
+                                    fromView:nil]
+               rightClick:rightClick];
 }
 
 @end
