@@ -30,6 +30,8 @@ s_minefield* MakeMinefield(NSInteger row,
 }
 
 void freeMinefield(s_minefield *minefield) {
+    for(NSInteger i=0; i<minefield->x; ++i)
+        free(minefield->minefield[i]);
     free(minefield->minefield);
     free(minefield);
 }
