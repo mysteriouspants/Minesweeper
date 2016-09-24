@@ -15,7 +15,7 @@
 @class mines_AppDelegate;
 
 @interface Mines_Engine : NSObject {
-    __weak mines_AppDelegate * dg;
+    mines_AppDelegate * dg;
     NSDate * gameStart;
     NSDate * gameStop;
     NSTimer * gameTimer;

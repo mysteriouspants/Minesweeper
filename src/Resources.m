@@ -11,90 +11,90 @@
 
 #import "mines_AppDelegate.h"
 
-BOOL __res_init = FALSE;
+BOOL res_init = FALSE;
 
-NSDictionary * __resources;
-NSDictionary * __current_image_set;
-NSDictionary * __image_enum_map;
-NSMutableDictionary * __image_cache;
-NSString * __current_image_set_name;
-FSZip * __gfx;
+NSDictionary * gResources;
+NSDictionary * gCurrentImageSet;
+NSDictionary * gImageEnumMap;
+NSMutableDictionary * gImageCache;
+NSString * gCurrentImageSetName;
+FSZip * gfx;
 
-__weak mines_AppDelegate * __appDg;
+mines_AppDelegate * appDg;
 
 void injectAppDelegate(mines_AppDelegate * dg) {
-    __appDg = dg;
+    appDg = dg;
      // sendActionOn:NSLeftMouseDownMask|NSRightMouseDownMask
 }
 
-BOOL __resources_init() {
-    if(__res_init)
-        return __res_init;
+BOOL resources_init() {
+    if(res_init)
+        return res_init;
     else
         NSLog(@"Initializing resource system");
     NSAutoreleasePool * pool0 = [[NSAutoreleasePool alloc] init];
-    __resources = [[NSDictionary alloc] initWithContentsOfFile:
+    gResources = [[NSDictionary alloc] initWithContentsOfFile:
                    [NSString stringWithFormat:@"%@/Resources.plist",
                     [[NSBundle mainBundle] resourcePath]]];
-    if(__resources == nil) {
+    if(gResources == nil) {
         NSLog(@"FATAL: Cannot find Resources.plist!");
         return FALSE;
     }
-    __current_image_set_name = @"mcspider_art";
-    __current_image_set = [[__resources objectForKey:@"Image Sets"]
-                           objectForKey:__current_image_set_name];
-    __image_enum_map = [__resources objectForKey:@"Image Enum Mappings"];
+    gCurrentImageSetName = @"mcspider_art";
+    gCurrentImageSet = [[gResources objectForKey:@"Image Sets"]
+                           objectForKey:gCurrentImageSetName];
+    gImageEnumMap = [gResources objectForKey:@"Image Enum Mappings"];
     // change all the keys from NSString to NSNumber
     NSMutableDictionary * d = [[NSMutableDictionary alloc] init];
-    for(NSString * str in __image_enum_map) {
-        [d setObject:[__image_enum_map objectForKey:str]
+    for(NSString * str in gImageEnumMap) {
+        [d setObject:[gImageEnumMap objectForKey:str]
               forKey:[NSNumber numberWithInteger:[str integerValue]]];
     }
-    __image_enum_map = [[NSDictionary dictionaryWithDictionary:d] retain];
+    gImageEnumMap = [[NSDictionary dictionaryWithDictionary:d] retain];
     
     
-    __gfx = [[FSZip alloc] initWithFileName:[NSString stringWithFormat:@"%@/gfx.zip",[[NSBundle mainBundle] resourcePath]]];
-    NSLog(@"FSZip sees %d files.",[__gfx files]);
-    NSLog(@"FSZip sees: %@",[__gfx containedFiles]);
+    gfx = [[FSZip alloc] initWithFileName:[NSString stringWithFormat:@"%@/gfx.zip",[[NSBundle mainBundle] resourcePath]]];
+    NSLog(@"FSZip sees %d files.",[gfx files]);
+    NSLog(@"FSZip sees: %@",[gfx containedFiles]);
     
-    if(__gfx==nil) {
+    if(gfx==nil) {
         NSLog(@"Cannot open gfx archive!");
-        __res_init = FALSE;
-        return __res_init;
+        res_init = FALSE;
+        return res_init;
     }
     
-    __image_cache = [[NSMutableDictionary alloc] init];
+    gImageCache = [[NSMutableDictionary alloc] init];
     
     [pool0 release];
-    __res_init = TRUE;
-    return __res_init;
+    res_init = TRUE;
+    return res_init;
 }
 
 bool putImageAtTile(const IMAGE image_id, const NSInteger x, const NSInteger y) {
-    if(!__resources_init()) {
+    if(!resources_init()) {
         NSLog(@"Resource system initialization failed.  Failing to set image.");
         return FALSE;
     }
-    NSImageCell * c = [[__appDg minefield] cellAtRow:x column:y];
+    NSImageCell * c = [[appDg minefield] cellAtRow:x column:y];
     if(c==nil) {
         c = [[NSImageCell alloc] init];
-        [[__appDg minefield] putCell:c atRow:x column:y];
+        [[appDg minefield] putCell:c atRow:x column:y];
     }
     [c setImage:getImage(image_id)];
     return TRUE;
 }
 // set to false to emit information about images
 NSImage * getImage(const IMAGE image_id) {
-    if(!__resources_init())
+    if(!resources_init())
         return nil;
     NSAutoreleasePool * pool0 = [[NSAutoreleasePool alloc] init];
-    NSString * image_name = [__image_enum_map objectForKey:
+    NSString * image_name = [gImageEnumMap objectForKey:
                              [NSNumber numberWithInteger:image_id]];
-    NSString * image_file = [__current_image_set objectForKey:image_name];
-    NSImage * i = [__image_cache objectForKey:image_file];
+    NSString * image_file = [gCurrentImageSet objectForKey:image_name];
+    NSImage * i = [gImageCache objectForKey:image_file];
     if(i==nil) {
-        i = [[NSImage alloc] initWithData:[__gfx dataForFile:image_file]];
-        [__image_cache setObject:[i autorelease]
+        i = [[NSImage alloc] initWithData:[gfx dataForFile:image_file]];
+        [gImageCache setObject:[i autorelease]
                           forKey:image_file];
     }
 //  [image_file release];
